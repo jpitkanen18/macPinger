@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C80860EDFF44CDD03CC4E8A2 /* Pods_Service_Checker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC0B66329CEA3B908B04376A /* Pods_Service_Checker.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		E8D49BB821F5BCEE00DC594F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8D49BB721F5BCEE00DC594F /* AppDelegate.swift */; };
 		E8D49BBA21F5BCEE00DC594F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8D49BB921F5BCEE00DC594F /* ViewController.swift */; };
 		E8D49BBC21F5BCF100DC594F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8D49BBB21F5BCF100DC594F /* Assets.xcassets */; };
@@ -33,6 +34,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		120F35C06941B2D3130006CB /* Pods-Service Checker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Service Checker.release.xcconfig"; path = "Pods/Target Support Files/Pods-Service Checker/Pods-Service Checker.release.xcconfig"; sourceTree = "<group>"; };
+		8AFA72DFE74174DAC136DBA8 /* Pods_Service_CheckerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Service_CheckerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9EB4D245892A155A301775FB /* Pods-Service Checker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Service Checker.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Service Checker/Pods-Service Checker.debug.xcconfig"; sourceTree = "<group>"; };
+		BBD2D444298368FE610EAC00 /* Pods_Service_CheckerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Service_CheckerUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC0B66329CEA3B908B04376A /* Pods_Service_Checker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Service_Checker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E856CDF321F5DD4A00FEE309 /* Service Checker.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Service Checker.entitlements"; sourceTree = "<group>"; };
 		E8D49BB421F5BCEE00DC594F /* Service Checker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Service Checker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8D49BB721F5BCEE00DC594F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E8D49BB921F5BCEE00DC594F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -53,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C80860EDFF44CDD03CC4E8A2 /* Pods_Service_Checker.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -73,6 +81,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AFB9EA47EB23135902BE5452 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9EB4D245892A155A301775FB /* Pods-Service Checker.debug.xcconfig */,
+				120F35C06941B2D3130006CB /* Pods-Service Checker.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		E53EE698C48F09AFFCFA68E5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BC0B66329CEA3B908B04376A /* Pods_Service_Checker.framework */,
+				8AFA72DFE74174DAC136DBA8 /* Pods_Service_CheckerTests.framework */,
+				BBD2D444298368FE610EAC00 /* Pods_Service_CheckerUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		E8D49BAB21F5BCEE00DC594F = {
 			isa = PBXGroup;
 			children = (
@@ -80,6 +107,8 @@
 				E8D49BC921F5BCF100DC594F /* Service CheckerTests */,
 				E8D49BD421F5BCF100DC594F /* Service CheckerUITests */,
 				E8D49BB521F5BCEE00DC594F /* Products */,
+				AFB9EA47EB23135902BE5452 /* Pods */,
+				E53EE698C48F09AFFCFA68E5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -96,6 +125,7 @@
 		E8D49BB621F5BCEE00DC594F /* Service Checker */ = {
 			isa = PBXGroup;
 			children = (
+				E856CDF321F5DD4A00FEE309 /* Service Checker.entitlements */,
 				E8D49BB721F5BCEE00DC594F /* AppDelegate.swift */,
 				E8D49BB921F5BCEE00DC594F /* ViewController.swift */,
 				E8D49BBB21F5BCF100DC594F /* Assets.xcassets */,
@@ -131,9 +161,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E8D49BDA21F5BCF100DC594F /* Build configuration list for PBXNativeTarget "Service Checker" */;
 			buildPhases = (
+				B8A515A7C1119AEB2B7DCD89 /* [CP] Check Pods Manifest.lock */,
 				E8D49BB021F5BCEE00DC594F /* Sources */,
 				E8D49BB121F5BCEE00DC594F /* Frameworks */,
 				E8D49BB221F5BCEE00DC594F /* Resources */,
+				152639819C02CF07F9D06108 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -192,6 +224,14 @@
 				TargetAttributes = {
 					E8D49BB321F5BCEE00DC594F = {
 						CreatedOnToolsVersion = 10.1;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.Mac = {
+								enabled = 0;
+							};
+							com.apple.Sandbox = {
+								enabled = 1;
+							};
+						};
 					};
 					E8D49BC521F5BCF100DC594F = {
 						CreatedOnToolsVersion = 10.1;
@@ -249,6 +289,47 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		152639819C02CF07F9D06108 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Service Checker/Pods-Service Checker-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/PlainPing/PlainPing.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PlainPing.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Service Checker/Pods-Service Checker-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B8A515A7C1119AEB2B7DCD89 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Service Checker-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		E8D49BB021F5BCEE00DC594F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -298,6 +379,7 @@
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
+			usesTabs = 0;
 		};
 /* End PBXVariantGroup section */
 
@@ -419,9 +501,11 @@
 		};
 		E8D49BDB21F5BCF100DC594F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9EB4D245892A155A301775FB /* Pods-Service Checker.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = "Service Checker/Service_Checker.entitlements";
+				CODE_SIGN_ENTITLEMENTS = "Service Checker/Service Checker.entitlements";
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 74RWVTYMM3;
@@ -430,17 +514,24 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "jbenisoy.Service-Checker";
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				PRODUCT_BUNDLE_IDENTIFIER = "jpitkanen.Service-Checker";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 4.2;
+				dd = d;
 			};
 			name = Debug;
 		};
 		E8D49BDC21F5BCF100DC594F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 120F35C06941B2D3130006CB /* Pods-Service Checker.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = "Service Checker/Service_Checker.entitlements";
+				CODE_SIGN_ENTITLEMENTS = "Service Checker/Service Checker.entitlements";
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 74RWVTYMM3;
@@ -449,9 +540,14 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "jbenisoy.Service-Checker";
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				PRODUCT_BUNDLE_IDENTIFIER = "jpitkanen.Service-Checker";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 4.2;
+				dd = d;
 			};
 			name = Release;
 		};

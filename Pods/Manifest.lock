@@ -1,0 +1,20 @@
+PODS:
+  - Alamofire (4.8.1)
+  - PlainPing (0.5)
+
+DEPENDENCIES:
+  - Alamofire
+  - PlainPing
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - PlainPing
+
+SPEC CHECKSUMS:
+  Alamofire: 16ce2c353fb72865124ddae8a57c5942388f4f11
+  PlainPing: 6b248b94d92be7ec0410952d1b09af43b9a39015
+
+PODFILE CHECKSUM: 25daf4e97dba4504a71bd352ec7f6aa1fc667b31
+
+COCOAPODS: 1.5.2
