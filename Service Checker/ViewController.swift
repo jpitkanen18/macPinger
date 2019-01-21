@@ -30,6 +30,7 @@ class ViewController: NSViewController {
         self.view.window?.title = "System Status Checker v1.0"
     }
     
+    
 
     
     @IBAction func buttonApple(_ sender: Any) {
@@ -112,6 +113,7 @@ class ViewController: NSViewController {
     }
     var bensi = "System Status Checker v1.0"
     var jese = "Jesse Pitkänen 2019"
+    var test1 = "Googlu"
     override func viewDidLoad() {
         super.viewDidLoad()
         labelApp.stringValue = bensi
@@ -124,6 +126,7 @@ class ViewController: NSViewController {
         indicatorGH.isHidden = true
         indicatorApple.isHidden = true
         indicatorGoogle.isHidden = true
+        buttonGoogle.title = test1
         
         
         
