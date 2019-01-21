@@ -7,6 +7,7 @@ target 'Service Checker' do
 
   pod "PlainPing"
   pod "Alamofire"
+  pod 'Preferences'
 
 
 end

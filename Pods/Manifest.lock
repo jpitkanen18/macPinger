@@ -1,20 +1,24 @@
 PODS:
   - Alamofire (4.8.1)
   - PlainPing (0.5)
+  - Preferences (0.2.1)
 
 DEPENDENCIES:
   - Alamofire
   - PlainPing
+  - Preferences
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Alamofire
     - PlainPing
+    - Preferences
 
 SPEC CHECKSUMS:
   Alamofire: 16ce2c353fb72865124ddae8a57c5942388f4f11
   PlainPing: 6b248b94d92be7ec0410952d1b09af43b9a39015
+  Preferences: 5543bfd757a2485a310683da977d661c0ae509a9
 
-PODFILE CHECKSUM: 25daf4e97dba4504a71bd352ec7f6aa1fc667b31
+PODFILE CHECKSUM: 625d59b16ecc17ac0a40dce504d814b3e658e02f
 
 COCOAPODS: 1.5.2

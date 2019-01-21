@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "8562E4E9F59A31FD43F1FAA5234DDAFC"
-               BlueprintName = "Pods-Service Checker"
+               BlueprintIdentifier = "20A63AD23FABBBF8563D27D717F05407"
+               BlueprintName = "Preferences"
                ReferencedContainer = "container:Pods.xcodeproj"
-               BuildableName = "Pods-Service Checker.framework">
+               BuildableName = "Preferences.framework">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

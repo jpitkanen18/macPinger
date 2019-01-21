@@ -41,7 +41,7 @@
 		BC0B66329CEA3B908B04376A /* Pods_Service_Checker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Service_Checker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E856CDF321F5DD4A00FEE309 /* Service Checker.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Service Checker.entitlements"; sourceTree = "<group>"; };
 		E8D49BB421F5BCEE00DC594F /* Service Checker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Service Checker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		E8D49BB721F5BCEE00DC594F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E8D49BB721F5BCEE00DC594F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = "Service Checker/AppDelegate.swift"; sourceTree = SOURCE_ROOT; };
 		E8D49BB921F5BCEE00DC594F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		E8D49BBB21F5BCF100DC594F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E8D49BBE21F5BCF100DC594F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -299,11 +299,13 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-Service Checker/Pods-Service Checker-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/PlainPing/PlainPing.framework",
+				"${BUILT_PRODUCTS_DIR}/Preferences/Preferences.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PlainPing.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Preferences.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -378,7 +380,8 @@
 				E8D49BBE21F5BCF100DC594F /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
+			path = "Service Checker";
+			sourceTree = SOURCE_ROOT;
 			usesTabs = 0;
 		};
 /* End PBXVariantGroup section */
@@ -515,7 +518,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.14;
-				PRODUCT_BUNDLE_IDENTIFIER = "jpitkanen.Service-Checker";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jpitkanen.servicechecker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_INSTALL_OBJC_HEADER = NO;
@@ -541,7 +544,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.14;
-				PRODUCT_BUNDLE_IDENTIFIER = "jpitkanen.Service-Checker";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jpitkanen.servicechecker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_INSTALL_OBJC_HEADER = NO;

@@ -21,7 +21,7 @@ class ViewController: NSViewController {
     @IBOutlet weak var labelApp: NSTextField!
     @IBOutlet weak var labelJese: NSTextFieldCell!
     @IBOutlet weak var pingResultLabelApple: NSTextField!
-    let hostApple = "www.apple.com"
+    var hostApple = "www.apple.com"
     var benis = NumberFormatter()
     var huutista = NSColor(deviceRed: 266, green: 0, blue: 0, alpha: 1.0)
     var onnistu = NSColor(deviceRed: 0, green: 266, blue: 0, alpha: 1.0)
