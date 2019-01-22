@@ -7,14 +7,19 @@
 //
 import Cocoa
 import PlainPing
+
 class ViewController: NSViewController {
     //Memes here
+    
 
     @IBOutlet weak var indicatorGoogle: NSBox!
     @IBOutlet weak var indicatorApple: NSBox!
     @IBOutlet weak var indicatorGH: NSBox!
     @IBOutlet weak var buttonGoogle: NSButton!
     @IBOutlet weak var buttonGH: NSLayoutConstraint!
+    @IBOutlet weak var buttonGoogleOutlet: NSButton!
+    @IBOutlet weak var buttonAppleOutlet: NSButton!
+    @IBOutlet weak var buttonGHOutlet: NSButton!
     @IBOutlet weak var pingResultLabel: NSTextField!
     @IBOutlet weak var buttonApple: NSLayoutConstraint!
     @IBOutlet weak var pingResultLabelGH: NSTextField!
@@ -25,16 +30,47 @@ class ViewController: NSViewController {
     var benis = NumberFormatter()
     var huutista = NSColor(deviceRed: 266, green: 0, blue: 0, alpha: 1.0)
     var onnistu = NSColor(deviceRed: 0, green: 266, blue: 0, alpha: 1.0)
+    var serviceChecker = pings()
     override func viewDidAppear() {
         super.viewDidAppear()
         self.view.window?.title = "System Status Checker v1.0"
+        let buttonTitle = buttonName1
+        buttonAppleOutlet.title = buttonTitle
+        buttonEntity = buttonAppleOutlet
+        
     }
     
     
-
+    @IBAction func testButton(_ sender: Any) {
+        print(buttonPressedYes1)
+    }
+    
     
     @IBAction func buttonApple(_ sender: Any) {
-        PlainPing.ping("www.apple.com", withTimeout: 1, completionBlock: {(timeElapsed:Double?, error:Error?) in
+        if buttonPressedYes1 == true {
+            PlainPing.ping(hostnameUser1, withTimeout: 1, completionBlock: {(timeElapsed:Double?, error:Error?) in
+                if let latency = timeElapsed {
+                    self.benis.numberStyle = .decimal
+                    self.benis.maximumFractionDigits = 2
+                    let latenssi = String(format: "%.2f", latency)
+                    self.pingResultLabelApple.stringValue = """
+                    Latency (ms):\n\((latenssi))\nService Online!
+                    """
+                    self.pingResultLabelApple.isHidden = false
+                    self.indicatorApple.isHidden = false
+                    self.indicatorApple.fillColor = self.onnistu
+                    print(hostnameUser1)
+                }
+                if let error = error {
+                    self.pingResultLabel.stringValue = ("Service Offline:\n \(error.localizedDescription)\nCheck Your Internet Connection!")
+                    self.pingResultLabelApple.isHidden = false
+                    self.indicatorApple.isHidden = false
+                    self.indicatorApple.fillColor = self.huutista
+                }
+            }
+        )}
+        else {
+        PlainPing.ping(serviceChecker.hostname3, withTimeout: 1, completionBlock: {(timeElapsed:Double?, error:Error?) in
             if let latency = timeElapsed {
                 self.benis.numberStyle = .decimal
                 self.benis.maximumFractionDigits = 2
@@ -45,24 +81,19 @@ class ViewController: NSViewController {
                 self.pingResultLabelApple.isHidden = false
                 self.indicatorApple.isHidden = false
                 self.indicatorApple.fillColor = self.onnistu
+                print(hostnameUser1)
                 
             }
-            
             if let error = error {
-                self.pingResultLabel.stringValue = ("Service Offline:\n \(error.localizedDescription)\n/Check Your Internet Connection!")
+                self.pingResultLabel.stringValue = ("Service Offline:\n \(error.localizedDescription)\nCheck Your Internet Connection!")
                 self.pingResultLabelApple.isHidden = false
                 self.indicatorApple.isHidden = false
                 self.indicatorApple.fillColor = self.huutista
-                
-                
-                
-                
             }
         }
     )}
-    
-    
-    @IBAction func buttonGH(_ sender: Any) {
+    }
+    @IBAction func githubPree(_ sender: NSButton) {
         PlainPing.ping("www.github.com", withTimeout: 1, completionBlock: {(timeElapsed:Double?, error:Error?) in
             if let latency = timeElapsed {
                 self.benis.numberStyle = .decimal
@@ -76,16 +107,15 @@ class ViewController: NSViewController {
                 self.indicatorGH.fillColor = self.onnistu
                 
             }
-            
             if let error = error {
-                self.pingResultLabel.stringValue = ("Service Offline:\n \(error.localizedDescription)\n/Check Your Internet Connection!")
+                self.pingResultLabelGH.stringValue = ("Service Offline:\n \(error.localizedDescription)\n/Check Your Internet Connection!")
                 self.pingResultLabelGH.isHidden = false
                 self.indicatorGH.isHidden = false
                 self.indicatorGH.fillColor = self.huutista
+                
             }
         })
     }
-    
     @IBAction func googlePress(_ sender: Any) {
         PlainPing.ping("www.google.com", withTimeout: 1, completionBlock: {(timeElapsed:Double?, error:Error?) in
             if let latency = timeElapsed {
@@ -100,7 +130,6 @@ class ViewController: NSViewController {
                 self.indicatorGoogle.fillColor = self.onnistu
             
             }
-            
             if let error = error {
                 self.pingResultLabel.stringValue = ("Service Offline:\n \(error.localizedDescription)\n/Check Your Internet Connection!")
                 self.pingResultLabel.isHidden = false
@@ -109,7 +138,6 @@ class ViewController: NSViewController {
                 
             }
         })
-        
     }
     var bensi = "System Status Checker v1.0"
     var jese = "Jesse Pitkänen 2019"
@@ -126,7 +154,7 @@ class ViewController: NSViewController {
         indicatorGH.isHidden = true
         indicatorApple.isHidden = true
         indicatorGoogle.isHidden = true
-        buttonGoogle.title = test1
+        
         
         
         
@@ -142,6 +170,12 @@ class ViewController: NSViewController {
     override var representedObject: Any? {
         didSet {
         // Update the view, if already loaded.
+            if buttonPressedYes1 == true {
+                self.buttonAppleOutlet.title = buttonName1
+            } else {
+                self.buttonAppleOutlet.title = "Benis"
+            }
+            
         }
     }
 
@@ -149,4 +183,3 @@ class ViewController: NSViewController {
 
 
 }
-

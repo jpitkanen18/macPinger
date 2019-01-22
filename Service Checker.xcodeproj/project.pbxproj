@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		C80860EDFF44CDD03CC4E8A2 /* Pods_Service_Checker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC0B66329CEA3B908B04376A /* Pods_Service_Checker.framework */; settings = {ATTRIBUTES = (Required, ); }; };
+		E822F14221F70F48009418EF /* PreferencesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E822F14121F70F48009418EF /* PreferencesViewController.swift */; };
 		E8D49BB821F5BCEE00DC594F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8D49BB721F5BCEE00DC594F /* AppDelegate.swift */; };
 		E8D49BBA21F5BCEE00DC594F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8D49BB921F5BCEE00DC594F /* ViewController.swift */; };
 		E8D49BBC21F5BCF100DC594F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8D49BBB21F5BCF100DC594F /* Assets.xcassets */; };
 		E8D49BBF21F5BCF100DC594F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8D49BBD21F5BCF100DC594F /* Main.storyboard */; };
 		E8D49BCB21F5BCF100DC594F /* Service_CheckerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8D49BCA21F5BCF100DC594F /* Service_CheckerTests.swift */; };
 		E8D49BD621F5BCF100DC594F /* Service_CheckerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8D49BD521F5BCF100DC594F /* Service_CheckerUITests.swift */; };
+		E8EB14A421F72D9800B76892 /* Service Checker.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8EB14A321F72D9800B76892 /* Service Checker.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +41,7 @@
 		9EB4D245892A155A301775FB /* Pods-Service Checker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Service Checker.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Service Checker/Pods-Service Checker.debug.xcconfig"; sourceTree = "<group>"; };
 		BBD2D444298368FE610EAC00 /* Pods_Service_CheckerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Service_CheckerUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC0B66329CEA3B908B04376A /* Pods_Service_Checker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Service_Checker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E822F14121F70F48009418EF /* PreferencesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferencesViewController.swift; sourceTree = "<group>"; };
 		E856CDF321F5DD4A00FEE309 /* Service Checker.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Service Checker.entitlements"; sourceTree = "<group>"; };
 		E8D49BB421F5BCEE00DC594F /* Service Checker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Service Checker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8D49BB721F5BCEE00DC594F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = "Service Checker/AppDelegate.swift"; sourceTree = SOURCE_ROOT; };
@@ -53,6 +56,7 @@
 		E8D49BD121F5BCF100DC594F /* Service CheckerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Service CheckerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8D49BD521F5BCF100DC594F /* Service_CheckerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service_CheckerUITests.swift; sourceTree = "<group>"; };
 		E8D49BD721F5BCF100DC594F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E8EB14A321F72D9800B76892 /* Service Checker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Service Checker.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +136,8 @@
 				E8D49BBD21F5BCF100DC594F /* Main.storyboard */,
 				E8D49BC021F5BCF100DC594F /* Info.plist */,
 				E8D49BC121F5BCF100DC594F /* Service_Checker.entitlements */,
+				E822F14121F70F48009418EF /* PreferencesViewController.swift */,
+				E8EB14A321F72D9800B76892 /* Service Checker.swift */,
 			);
 			path = "Service Checker";
 			sourceTree = "<group>";
@@ -338,7 +344,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				E8D49BBA21F5BCEE00DC594F /* ViewController.swift in Sources */,
+				E8EB14A421F72D9800B76892 /* Service Checker.swift in Sources */,
 				E8D49BB821F5BCEE00DC594F /* AppDelegate.swift in Sources */,
+				E822F14221F70F48009418EF /* PreferencesViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
