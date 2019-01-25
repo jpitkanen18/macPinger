@@ -24,8 +24,6 @@ class ViewController: NSViewController {
     @IBOutlet weak var labelGithubPing: NSTextField!
     @IBOutlet weak var labelApplePing: NSTextField!
     
-    
-    var benis = NumberFormatter()
     var huutista = NSColor(deviceRed: 266, green: 0, blue: 0, alpha: 1.0)
     var onnistu = NSColor(deviceRed: 0, green: 266, blue: 0, alpha: 1.0)
     let notificationCenter = NotificationCenter.default
@@ -73,8 +71,6 @@ class ViewController: NSViewController {
         if buttonPressedYes1 == true {
             PlainPing.ping(hostnameUser1, withTimeout: 1, completionBlock: {(timeElapsed:Double?, error:Error?) in
                 if let latency = timeElapsed {
-                    self.benis.numberStyle = .decimal
-                    self.benis.maximumFractionDigits = 2
                     let latenssi = String(format: "%.2f", latency)
                     self.pingResultLabelApple.stringValue = """
                     Latency (ms):\n\((latenssi))\nService Online!
@@ -95,8 +91,6 @@ class ViewController: NSViewController {
         else {
         PlainPing.ping(hostname3, withTimeout: 1, completionBlock: {(timeElapsed:Double?, error:Error?) in
             if let latency = timeElapsed {
-                self.benis.numberStyle = .decimal
-                self.benis.maximumFractionDigits = 2
                 let latenssi = String(format: "%.2f", latency)
                 self.pingResultLabelApple.stringValue = """
                 Latency (ms):\n\((latenssi))\nService Online!
@@ -108,7 +102,7 @@ class ViewController: NSViewController {
                 
             }
             if let error = error {
-                self.pingResultLabel.stringValue = ("Service Offline:\n \(error.localizedDescription)\nCheck Your Internet Connection!")
+                self.pingResultLabelApple.stringValue = ("Service Offline:\n \(error.localizedDescription)\nCheck Your Internet Connection!")
                 self.pingResultLabelApple.isHidden = false
                 self.indicatorApple.isHidden = false
                 self.indicatorApple.fillColor = self.huutista
@@ -120,8 +114,6 @@ class ViewController: NSViewController {
         if buttonPressedYes2 == true {
             PlainPing.ping(hostnameUser2, withTimeout: 1, completionBlock: {(timeElapsed:Double?, error:Error?) in
                 if let latency = timeElapsed {
-                    self.benis.numberStyle = .decimal
-                    self.benis.maximumFractionDigits = 2
                     let latenssi = String(format: "%.2f", latency)
                     self.pingResultLabelGH.stringValue = """
                     Latency (ms):\n\((latenssi))\nService Online!
@@ -141,8 +133,6 @@ class ViewController: NSViewController {
             )} else {
         PlainPing.ping("www.github.com", withTimeout: 1, completionBlock: {(timeElapsed:Double?, error:Error?) in
             if let latency = timeElapsed {
-                self.benis.numberStyle = .decimal
-                self.benis.maximumFractionDigits = 2
                 let latenssi = String(format: "%.2f", latency)
                 self.pingResultLabelGH.stringValue = """
                 Latency (ms):\n\((latenssi))\nService Online!
@@ -165,8 +155,6 @@ class ViewController: NSViewController {
         if buttonPressedYes3 == true {
             PlainPing.ping(hostnameUser3, withTimeout: 1, completionBlock: {(timeElapsed:Double?, error:Error?) in
                 if let latency = timeElapsed {
-                    self.benis.numberStyle = .decimal
-                    self.benis.maximumFractionDigits = 2
                     let latenssi = String(format: "%.2f", latency)
                     self.pingResultLabel.stringValue = """
                     Latency (ms):\n\((latenssi))\nService Online!
@@ -188,8 +176,6 @@ class ViewController: NSViewController {
             )} else {
         PlainPing.ping("www.google.com", withTimeout: 1, completionBlock: {(timeElapsed:Double?, error:Error?) in
             if let latency = timeElapsed {
-                self.benis.numberStyle = .decimal
-                self.benis.maximumFractionDigits = 2
                 let latenssi = String(format: "%.2f", latency)
                 self.pingResultLabel.stringValue = """
                 Latency (ms):\n\((latenssi))\nService Online!

@@ -2383,3 +2383,5 @@ DerivedData/Service Checker/Logs/Issues/807CCDD9-A4C5-4258-8508-BD2D241D1860.xca
 DerivedData/Service Checker/Logs/Issues/FCCD9289-2A90-42BF-B695-D89A1FB4BE43.xcactivitylog
 DerivedData/Service Checker/Logs/Issues/LogStoreManifest.plist
 DerivedData/Service Checker/OpenQuickly-ReferencedFrameworks.index-v1
+DerivedData/
+Package.swift
