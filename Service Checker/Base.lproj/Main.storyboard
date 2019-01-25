@@ -29,7 +29,7 @@
         <!--Preferences View Controller-->
         <scene sceneID="9zf-NB-Ynt">
             <objects>
-                <viewController id="jmt-o1-9Id" customClass="PreferencesViewController" customModule="Service_Checker" sceneMemberID="viewController">
+                <viewController id="jmt-o1-9Id" customClass="PreferencesViewController" customModule="Service_Checker" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="iLp-x3-XXe">
                         <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -106,6 +106,9 @@
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
+                                <connections>
+                                    <action selector="buttonPressSecond:" target="jmt-o1-9Id" id="Pyb-Bd-RqR"/>
+                                </connections>
                             </button>
                             <button verticalHuggingPriority="750" id="lI9-0I-I9i">
                                 <rect key="frame" x="301" y="93" width="81" height="32"/>
@@ -114,6 +117,9 @@
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
+                                <connections>
+                                    <action selector="buttonPressThird:" target="jmt-o1-9Id" id="bqY-3P-RIy"/>
+                                </connections>
                             </button>
                             <button verticalHuggingPriority="750" id="k2w-HJ-aos">
                                 <rect key="frame" x="33" y="13" width="81" height="32"/>
@@ -122,6 +128,9 @@
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
+                                <connections>
+                                    <action selector="resetButtonPress:" target="jmt-o1-9Id" id="rj2-SZ-4yw"/>
+                                </connections>
                             </button>
                             <button verticalHuggingPriority="750" id="cdN-6z-p7r">
                                 <rect key="frame" x="311" y="22" width="61" height="18"/>
@@ -148,6 +157,10 @@
                         <outlet property="hostnameFirst" destination="X2p-CI-TDy" id="w0m-y2-hEB"/>
                         <outlet property="hostnameSecond" destination="fQU-L5-Db5" id="7ZX-Dz-18s"/>
                         <outlet property="hostnameThird" destination="7n2-P5-dDp" id="OLx-w5-U4B"/>
+                        <outlet property="resetButton" destination="k2w-HJ-aos" id="jQA-e9-fjz"/>
+                        <outlet property="settingButton1" destination="5zv-mE-p1G" id="tUm-2j-doE"/>
+                        <outlet property="settingButton2" destination="QiX-wE-oBw" id="CJ0-Jn-DPQ"/>
+                        <outlet property="settingButton3" destination="lI9-0I-I9i" id="vz1-cc-tSd"/>
                     </connections>
                 </viewController>
                 <customObject id="wfn-pl-V1S" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
@@ -858,7 +871,7 @@
         <!--View Controller-->
         <scene sceneID="hIz-AP-VOD">
             <objects>
-                <viewController id="XfG-lQ-9wD" customClass="ViewController" customModule="Service_Checker" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="XfG-lQ-9wD" customClass="ViewController" customModule="Service_Checker" sceneMemberID="viewController">
                     <view key="view" wantsLayer="YES" id="m2S-Jp-Qdl">
                         <rect key="frame" x="0.0" y="0.0" width="446" height="534"/>
                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
@@ -895,7 +908,7 @@
                                 </textFieldCell>
                             </textField>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="LLy-Qk-8ac">
-                                <rect key="frame" x="25" y="147" width="106" height="104"/>
+                                <rect key="frame" x="24" y="147" width="107" height="104"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <textFieldCell key="cell" lineBreakMode="clipping" title="Label" id="pE1-bb-0E3">
                                     <font key="font" metaFont="system"/>
@@ -904,7 +917,7 @@
                                 </textFieldCell>
                             </textField>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="R4n-Qe-xvt">
-                                <rect key="frame" x="171" y="142" width="106" height="110"/>
+                                <rect key="frame" x="170" y="142" width="107" height="110"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <textFieldCell key="cell" lineBreakMode="clipping" title="Label" id="JYc-km-CEs">
                                     <font key="font" metaFont="system"/>
@@ -941,7 +954,7 @@
                                 </buttonCell>
                             </button>
                             <box boxType="custom" cornerRadius="4" title="Box" id="Kl0-Oy-bCV">
-                                <rect key="frame" x="317" y="97" width="106" height="43"/>
+                                <rect key="frame" x="316" y="97" width="106" height="43"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <view key="contentView" id="0T9-u2-8RB">
                                     <rect key="frame" x="1" y="1" width="104" height="41"/>
@@ -965,31 +978,49 @@
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
-                            <button verticalHuggingPriority="750" id="f1A-Dk-KyV">
-                                <rect key="frame" x="182" y="341" width="81" height="32"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <buttonCell key="cell" type="push" title="Button" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="taE-jv-YHl">
-                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="ANa-cA-IXw">
+                                <rect key="frame" x="18" y="20" width="121" height="54"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <textFieldCell key="cell" lineBreakMode="clipping" title="Label" id="6qK-e2-KeB">
                                     <font key="font" metaFont="system"/>
-                                </buttonCell>
-                                <connections>
-                                    <action selector="testButton:" target="XfG-lQ-9wD" id="R69-Aa-WMn"/>
-                                </connections>
-                            </button>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="oc8-G5-LRS">
+                                <rect key="frame" x="159" y="20" width="127" height="54"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <textFieldCell key="cell" lineBreakMode="clipping" title="Label" id="RvN-Rr-Tcq">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="FSx-Bt-HiU">
+                                <rect key="frame" x="305" y="20" width="133" height="54"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <textFieldCell key="cell" lineBreakMode="clipping" title="Label" id="MZ5-QE-QxI">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
                         </subviews>
                         <shadow key="shadow">
                             <color key="color" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         </shadow>
                     </view>
                     <connections>
-                        <outlet property="buttonAppleOutlet" destination="jnT-Ya-XeG" id="JZp-y1-bTE"/>
+                        <outlet property="buttonAppleOutlet" destination="jnT-Ya-XeG" id="peE-5J-TQc"/>
                         <outlet property="buttonGHOutlet" destination="Bbp-k9-30f" id="8Uf-8S-Byl"/>
-                        <outlet property="buttonGoogle" destination="vhW-Rw-5UV" id="1w3-CR-Mqi"/>
                         <outlet property="buttonGoogleOutlet" destination="vhW-Rw-5UV" id="iwB-Dz-vdy"/>
                         <outlet property="indicatorApple" destination="Kl0-Oy-bCV" id="fGi-Dc-F18"/>
                         <outlet property="indicatorGH" destination="Knp-Z8-r7S" id="4YV-vd-KSL"/>
                         <outlet property="indicatorGoogle" destination="eWy-tq-JIz" id="GJ2-Dg-hXP"/>
                         <outlet property="labelApp" destination="gx0-eQ-EMN" id="e0W-ml-2qP"/>
+                        <outlet property="labelApplePing" destination="FSx-Bt-HiU" id="YlO-j9-PQB"/>
+                        <outlet property="labelGithubPing" destination="oc8-G5-LRS" id="uGS-W7-UBW"/>
+                        <outlet property="labelGooglePing" destination="ANa-cA-IXw" id="6my-3q-1Vo"/>
                         <outlet property="labelJese" destination="rPc-TL-mYw" id="Rpc-g9-q6r"/>
                         <outlet property="pingResultLabel" destination="LLy-Qk-8ac" id="vex-QC-IjR"/>
                         <outlet property="pingResultLabelApple" destination="QA0-CC-nbv" id="tWx-Gp-wMQ"/>

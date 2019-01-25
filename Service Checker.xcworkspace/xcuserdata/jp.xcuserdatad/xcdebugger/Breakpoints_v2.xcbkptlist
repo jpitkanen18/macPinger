@@ -10,13 +10,91 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Service Checker/ViewController.swift"
-            timestampString = "569890336.751527"
+            timestampString = "570106565.576015"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "5"
             endingLineNumber = "5"
             landmarkName = "unknown"
             landmarkType = "0">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Service Checker/PreferencesViewController.swift"
+            timestampString = "570106565.576102"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "19"
+            endingLineNumber = "19"
+            landmarkName = "PreferencesViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Service_Checker.PreferencesViewController.hostnameThird.getter : Swift.Optional&lt;__C.NSTextField&gt;"
+                  moduleName = "Service Checker"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jp/xcode/Service%20Checker/Service%20Checker/PreferencesViewController.swift"
+                  timestampString = "570105574.032886"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "19"
+                  endingLineNumber = "19"
+                  offsetFromSymbolStart = "114">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Service_Checker.PreferencesViewController.hostnameThird.setter : Swift.Optional&lt;__C.NSTextField&gt;"
+                  moduleName = "Service Checker"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jp/xcode/Service%20Checker/Service%20Checker/PreferencesViewController.swift"
+                  timestampString = "570105574.040448"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "19"
+                  endingLineNumber = "19"
+                  offsetFromSymbolStart = "128">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Service_Checker.PreferencesViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; Service_Checker.PreferencesViewController"
+                  moduleName = "Service Checker"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jp/xcode/Service%20Checker/Service%20Checker/PreferencesViewController.swift"
+                  timestampString = "570105574.043805"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "19"
+                  endingLineNumber = "19"
+                  offsetFromSymbolStart = "741">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Service_Checker.PreferencesViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;Service_Checker.PreferencesViewController&gt;"
+                  moduleName = "Service Checker"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jp/xcode/Service%20Checker/Service%20Checker/PreferencesViewController.swift"
+                  timestampString = "570105574.0465961"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "19"
+                  endingLineNumber = "19"
+                  offsetFromSymbolStart = "712">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

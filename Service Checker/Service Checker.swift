@@ -12,31 +12,12 @@ import PlainPing
 var buttonPressedYes1 = false
 var buttonPressedYes2 = false
 var buttonPressedYes3 = false
-var hostnameUser1: String = "www.ylilauta.org"
-var buttonName1 = "Benis"
-var buttonEntity = entity()
-let prefVC = PreferencesViewController()
-class pings {
-    public static let shared = pings()
-
-    var hostname1 = "www.google.com"
-    var hostname2 = "www.github.com"
-    var hostname3 = "www.apple.com"
-    //lazy var hostnameUser1 = pre
-    lazy var hostnameUser2 = String(prefVC.hostnameSecond.stringValue)
-    lazy var hostnameUser3 = String(prefVC.hostnameThird.stringValue)
-    var buttonName1 = "Google"
-    var buttonName2 = "GitHub"
-    var buttonName3 = "Benis"
-    lazy var buttonNameUser1 = String(prefVC.buttonNameFirst.stringValue)
-    lazy var buttonNameUser2 = String(prefVC.buttonNameSecond.stringValue)
-    lazy var buttonNameUser3 = String(prefVC.buttonNameThird.stringValue)
-
-    
-    
-    
-    
-    
-
-    
-}
+var hostnameUser1: String = "www.apple.com"
+var hostnameUser2: String = "www.github.com"
+var hostnameUser3: String = "www.google.com"
+var buttonName1: String = "Apple"
+var buttonName2: String = "GitHub"
+var buttonName3: String = "Google"
+var hostname1 = "www.apple.com"
+var hostname2 = "www.github.com"
+var hostname3 = "www.google.com"
