@@ -1,6 +1,6 @@
 # Service-Checker
 
-Simple macOS application for checking website availability
+Simple macOS application for checking website/IP Address availability
 
 Nothing special, mostly exploring Swift and Xcode
 
