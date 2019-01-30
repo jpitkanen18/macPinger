@@ -1,4 +1,4 @@
-# Service-Checker
+# macPinger
 
 Simple macOS application for checking website/IP Address availability
 
