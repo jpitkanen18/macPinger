@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		C80860EDFF44CDD03CC4E8A2 /* Pods_Service_Checker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC0B66329CEA3B908B04376A /* Pods_Service_Checker.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		E822F14221F70F48009418EF /* PreferencesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E822F14121F70F48009418EF /* PreferencesViewController.swift */; };
+		E869B21221FFB9480075290F /* HelpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E869B21021FFB9480075290F /* HelpViewController.swift */; };
+		E8D008462200C34F00323CD7 /* imageButtonTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8D008452200C34F00323CD7 /* imageButtonTest.swift */; };
 		E8D49BB821F5BCEE00DC594F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8D49BB721F5BCEE00DC594F /* AppDelegate.swift */; };
 		E8D49BBA21F5BCEE00DC594F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8D49BB921F5BCEE00DC594F /* ViewController.swift */; };
 		E8D49BBC21F5BCF100DC594F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8D49BBB21F5BCF100DC594F /* Assets.xcassets */; };
@@ -43,17 +45,19 @@
 		BC0B66329CEA3B908B04376A /* Pods_Service_Checker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Service_Checker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E822F14121F70F48009418EF /* PreferencesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferencesViewController.swift; sourceTree = "<group>"; };
 		E856CDF321F5DD4A00FEE309 /* Service Checker.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Service Checker.entitlements"; sourceTree = "<group>"; };
-		E8D49BB421F5BCEE00DC594F /* Service Checker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Service Checker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E869B21021FFB9480075290F /* HelpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpViewController.swift; sourceTree = "<group>"; };
+		E8D008452200C34F00323CD7 /* imageButtonTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = imageButtonTest.swift; sourceTree = "<group>"; };
+		E8D49BB421F5BCEE00DC594F /* macPinger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = macPinger.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8D49BB721F5BCEE00DC594F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = "Service Checker/AppDelegate.swift"; sourceTree = SOURCE_ROOT; };
 		E8D49BB921F5BCEE00DC594F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		E8D49BBB21F5BCF100DC594F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E8D49BBE21F5BCF100DC594F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E8D49BC021F5BCF100DC594F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E8D49BC121F5BCF100DC594F /* Service_Checker.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Service_Checker.entitlements; sourceTree = "<group>"; };
-		E8D49BC621F5BCF100DC594F /* Service CheckerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Service CheckerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E8D49BC621F5BCF100DC594F /* macPingerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = macPingerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8D49BCA21F5BCF100DC594F /* Service_CheckerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service_CheckerTests.swift; sourceTree = "<group>"; };
 		E8D49BCC21F5BCF100DC594F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E8D49BD121F5BCF100DC594F /* Service CheckerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Service CheckerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E8D49BD121F5BCF100DC594F /* macPingerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = macPingerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8D49BD521F5BCF100DC594F /* Service_CheckerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service_CheckerUITests.swift; sourceTree = "<group>"; };
 		E8D49BD721F5BCF100DC594F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E8EB14A321F72D9800B76892 /* Service Checker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Service Checker.swift"; sourceTree = "<group>"; };
@@ -119,9 +123,9 @@
 		E8D49BB521F5BCEE00DC594F /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				E8D49BB421F5BCEE00DC594F /* Service Checker.app */,
-				E8D49BC621F5BCF100DC594F /* Service CheckerTests.xctest */,
-				E8D49BD121F5BCF100DC594F /* Service CheckerUITests.xctest */,
+				E8D49BB421F5BCEE00DC594F /* macPinger.app */,
+				E8D49BC621F5BCF100DC594F /* macPingerTests.xctest */,
+				E8D49BD121F5BCF100DC594F /* macPingerUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -138,6 +142,8 @@
 				E8D49BC121F5BCF100DC594F /* Service_Checker.entitlements */,
 				E822F14121F70F48009418EF /* PreferencesViewController.swift */,
 				E8EB14A321F72D9800B76892 /* Service Checker.swift */,
+				E869B21021FFB9480075290F /* HelpViewController.swift */,
+				E8D008452200C34F00323CD7 /* imageButtonTest.swift */,
 			);
 			path = "Service Checker";
 			sourceTree = "<group>";
@@ -163,9 +169,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		E8D49BB321F5BCEE00DC594F /* Service Checker */ = {
+		E8D49BB321F5BCEE00DC594F /* macPinger */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E8D49BDA21F5BCF100DC594F /* Build configuration list for PBXNativeTarget "Service Checker" */;
+			buildConfigurationList = E8D49BDA21F5BCF100DC594F /* Build configuration list for PBXNativeTarget "macPinger" */;
 			buildPhases = (
 				B8A515A7C1119AEB2B7DCD89 /* [CP] Check Pods Manifest.lock */,
 				E8D49BB021F5BCEE00DC594F /* Sources */,
@@ -177,14 +183,14 @@
 			);
 			dependencies = (
 			);
-			name = "Service Checker";
+			name = macPinger;
 			productName = "Service Checker";
-			productReference = E8D49BB421F5BCEE00DC594F /* Service Checker.app */;
+			productReference = E8D49BB421F5BCEE00DC594F /* macPinger.app */;
 			productType = "com.apple.product-type.application";
 		};
-		E8D49BC521F5BCF100DC594F /* Service CheckerTests */ = {
+		E8D49BC521F5BCF100DC594F /* macPingerTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E8D49BDD21F5BCF100DC594F /* Build configuration list for PBXNativeTarget "Service CheckerTests" */;
+			buildConfigurationList = E8D49BDD21F5BCF100DC594F /* Build configuration list for PBXNativeTarget "macPingerTests" */;
 			buildPhases = (
 				E8D49BC221F5BCF100DC594F /* Sources */,
 				E8D49BC321F5BCF100DC594F /* Frameworks */,
@@ -195,14 +201,14 @@
 			dependencies = (
 				E8D49BC821F5BCF100DC594F /* PBXTargetDependency */,
 			);
-			name = "Service CheckerTests";
+			name = macPingerTests;
 			productName = "Service CheckerTests";
-			productReference = E8D49BC621F5BCF100DC594F /* Service CheckerTests.xctest */;
+			productReference = E8D49BC621F5BCF100DC594F /* macPingerTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		E8D49BD021F5BCF100DC594F /* Service CheckerUITests */ = {
+		E8D49BD021F5BCF100DC594F /* macPingerUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E8D49BE021F5BCF100DC594F /* Build configuration list for PBXNativeTarget "Service CheckerUITests" */;
+			buildConfigurationList = E8D49BE021F5BCF100DC594F /* Build configuration list for PBXNativeTarget "macPingerUITests" */;
 			buildPhases = (
 				E8D49BCD21F5BCF100DC594F /* Sources */,
 				E8D49BCE21F5BCF100DC594F /* Frameworks */,
@@ -213,9 +219,9 @@
 			dependencies = (
 				E8D49BD321F5BCF100DC594F /* PBXTargetDependency */,
 			);
-			name = "Service CheckerUITests";
+			name = macPingerUITests;
 			productName = "Service CheckerUITests";
-			productReference = E8D49BD121F5BCF100DC594F /* Service CheckerUITests.xctest */;
+			productReference = E8D49BD121F5BCF100DC594F /* macPingerUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -249,7 +255,7 @@
 					};
 				};
 			};
-			buildConfigurationList = E8D49BAF21F5BCEE00DC594F /* Build configuration list for PBXProject "Service Checker" */;
+			buildConfigurationList = E8D49BAF21F5BCEE00DC594F /* Build configuration list for PBXProject "macPinger" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -262,9 +268,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				E8D49BB321F5BCEE00DC594F /* Service Checker */,
-				E8D49BC521F5BCF100DC594F /* Service CheckerTests */,
-				E8D49BD021F5BCF100DC594F /* Service CheckerUITests */,
+				E8D49BB321F5BCEE00DC594F /* macPinger */,
+				E8D49BC521F5BCF100DC594F /* macPingerTests */,
+				E8D49BD021F5BCF100DC594F /* macPingerUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -347,6 +353,8 @@
 				E8EB14A421F72D9800B76892 /* Service Checker.swift in Sources */,
 				E8D49BB821F5BCEE00DC594F /* AppDelegate.swift in Sources */,
 				E822F14221F70F48009418EF /* PreferencesViewController.swift in Sources */,
+				E869B21221FFB9480075290F /* HelpViewController.swift in Sources */,
+				E8D008462200C34F00323CD7 /* imageButtonTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -371,12 +379,12 @@
 /* Begin PBXTargetDependency section */
 		E8D49BC821F5BCF100DC594F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = E8D49BB321F5BCEE00DC594F /* Service Checker */;
+			target = E8D49BB321F5BCEE00DC594F /* macPinger */;
 			targetProxy = E8D49BC721F5BCF100DC594F /* PBXContainerItemProxy */;
 		};
 		E8D49BD321F5BCF100DC594F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = E8D49BB321F5BCEE00DC594F /* Service Checker */;
+			target = E8D49BB321F5BCEE00DC594F /* macPinger */;
 			targetProxy = E8D49BD221F5BCF100DC594F /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -526,7 +534,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.14;
-				PRODUCT_BUNDLE_IDENTIFIER = com.jpitkanen.servicechecker;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jpitkanen.MacPing;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_INSTALL_OBJC_HEADER = NO;
@@ -552,7 +560,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.14;
-				PRODUCT_BUNDLE_IDENTIFIER = com.jpitkanen.servicechecker;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jpitkanen.MacPing;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_INSTALL_OBJC_HEADER = NO;
@@ -579,7 +587,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "jbenisoy.Service-CheckerTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Service Checker.app/Contents/MacOS/Service Checker";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/macPinger.app/Contents/MacOS/macPinger";
 			};
 			name = Debug;
 		};
@@ -600,7 +608,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "jbenisoy.Service-CheckerTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Service Checker.app/Contents/MacOS/Service Checker";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/macPinger.app/Contents/MacOS/macPinger";
 			};
 			name = Release;
 		};
@@ -647,7 +655,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		E8D49BAF21F5BCEE00DC594F /* Build configuration list for PBXProject "Service Checker" */ = {
+		E8D49BAF21F5BCEE00DC594F /* Build configuration list for PBXProject "macPinger" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E8D49BD821F5BCF100DC594F /* Debug */,
@@ -656,7 +664,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E8D49BDA21F5BCF100DC594F /* Build configuration list for PBXNativeTarget "Service Checker" */ = {
+		E8D49BDA21F5BCF100DC594F /* Build configuration list for PBXNativeTarget "macPinger" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E8D49BDB21F5BCF100DC594F /* Debug */,
@@ -665,7 +673,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E8D49BDD21F5BCF100DC594F /* Build configuration list for PBXNativeTarget "Service CheckerTests" */ = {
+		E8D49BDD21F5BCF100DC594F /* Build configuration list for PBXNativeTarget "macPingerTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E8D49BDE21F5BCF100DC594F /* Debug */,
@@ -674,7 +682,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E8D49BE021F5BCF100DC594F /* Build configuration list for PBXNativeTarget "Service CheckerUITests" */ = {
+		E8D49BE021F5BCF100DC594F /* Build configuration list for PBXNativeTarget "macPingerUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E8D49BE121F5BCF100DC594F /* Debug */,

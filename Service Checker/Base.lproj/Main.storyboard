@@ -29,7 +29,7 @@
         <!--Preferences View Controller-->
         <scene sceneID="9zf-NB-Ynt">
             <objects>
-                <viewController id="jmt-o1-9Id" customClass="PreferencesViewController" customModule="Service_Checker" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="jmt-o1-9Id" customClass="PreferencesViewController" customModule="macPinger" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="iLp-x3-XXe">
                         <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -37,7 +37,7 @@
                             <textField verticalHuggingPriority="750" id="X2p-CI-TDy">
                                 <rect key="frame" x="39" y="193" width="96" height="22"/>
                                 <autoresizingMask key="autoresizingMask"/>
-                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" drawsBackground="YES" id="h41-GB-eFd">
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" placeholderString="i.e google.com" drawsBackground="YES" id="h41-GB-eFd">
                                     <font key="font" usesAppearanceFont="YES"/>
                                     <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
@@ -64,7 +64,7 @@
                             <textField verticalHuggingPriority="750" id="gtr-c0-PJq">
                                 <rect key="frame" x="167" y="193" width="96" height="22"/>
                                 <autoresizingMask key="autoresizingMask"/>
-                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" drawsBackground="YES" id="xfc-2s-DfM">
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" placeholderString="i.e myServer" drawsBackground="YES" id="xfc-2s-DfM">
                                     <font key="font" metaFont="system"/>
                                     <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
@@ -148,10 +148,30 @@
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
                             </button>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="89N-XB-I6G">
+                                <rect key="frame" x="45" y="233" width="84" height="17"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <textFieldCell key="cell" lineBreakMode="clipping" title="Label" id="8b2-cV-mAW">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="hUU-Fb-sRj">
+                                <rect key="frame" x="177" y="233" width="76" height="17"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <textFieldCell key="cell" lineBreakMode="clipping" title="Label" id="rAv-Dd-1sh">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
                         </subviews>
                     </view>
                     <connections>
+                        <outlet property="addressLabel" destination="89N-XB-I6G" id="nYD-em-aNb"/>
                         <outlet property="buttonNameFirst" destination="gtr-c0-PJq" id="YIH-k6-oAt"/>
+                        <outlet property="buttonNameLabel" destination="hUU-Fb-sRj" id="CiY-V5-hvN"/>
                         <outlet property="buttonNameSecond" destination="gLQ-11-hHB" id="nhu-N8-NqW"/>
                         <outlet property="buttonNameThird" destination="Ns8-PA-98c" id="gOn-4K-o0i"/>
                         <outlet property="hostnameFirst" destination="X2p-CI-TDy" id="w0m-y2-hEB"/>
@@ -167,17 +187,188 @@
             </objects>
             <point key="canvasLocation" x="675" y="-323"/>
         </scene>
+        <!--Window Controller-->
+        <scene sceneID="i3D-HW-QO9">
+            <objects>
+                <windowController id="bte-a9-vdy" sceneMemberID="viewController">
+                    <window key="window" title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" frameAutosaveName="" animationBehavior="default" id="3o8-no-vxg">
+                        <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
+                        <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+                        <rect key="contentRect" x="294" y="313" width="480" height="270"/>
+                        <rect key="screenRect" x="0.0" y="0.0" width="1920" height="1057"/>
+                        <connections>
+                            <outlet property="delegate" destination="bte-a9-vdy" id="mHz-3J-Mqr"/>
+                        </connections>
+                    </window>
+                    <connections>
+                        <segue destination="e33-bl-tho" kind="relationship" relationship="window.shadowedContentViewController" id="Cul-tM-t0F"/>
+                    </connections>
+                </windowController>
+                <customObject id="poI-E7-DmU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="842" y="250"/>
+        </scene>
+        <!--Window Controller-->
+        <scene sceneID="9Vf-hp-lwb">
+            <objects>
+                <windowController id="kRF-Oa-Qb5" sceneMemberID="viewController">
+                    <window key="window" title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" frameAutosaveName="" animationBehavior="default" id="TSt-qD-pnt">
+                        <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
+                        <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+                        <rect key="contentRect" x="294" y="313" width="480" height="270"/>
+                        <rect key="screenRect" x="0.0" y="0.0" width="1920" height="1057"/>
+                        <connections>
+                            <outlet property="delegate" destination="kRF-Oa-Qb5" id="uoC-ct-Ts0"/>
+                        </connections>
+                    </window>
+                    <connections>
+                        <segue destination="Vwb-NC-AwO" kind="relationship" relationship="window.shadowedContentViewController" id="C42-W3-9dh"/>
+                    </connections>
+                </windowController>
+                <customObject id="hPV-4o-qsn" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="717" y="728"/>
+        </scene>
+        <!--Image Button Test-->
+        <scene sceneID="Bek-In-4UY">
+            <objects>
+                <viewController id="Vwb-NC-AwO" customClass="imageButtonTest" customModule="macPinger" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" id="l6m-yu-u9H">
+                        <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <button id="Wqz-qP-d7Q">
+                                <rect key="frame" x="20" y="20" width="111" height="72"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="rXy-5c-6zG">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="buttonMeme:" target="Vwb-NC-AwO" id="wIi-AZ-dRr"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                    </view>
+                    <connections>
+                        <outlet property="buttonImage" destination="Wqz-qP-d7Q" id="n8A-tf-Mhr"/>
+                    </connections>
+                </viewController>
+                <customObject id="cqd-Yq-jnd" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1424" y="703"/>
+        </scene>
+        <!--Help View Controller-->
+        <scene sceneID="GmY-w9-KnW">
+            <objects>
+                <viewController id="e33-bl-tho" customClass="HelpViewController" customModule="macPinger" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" id="XPv-lR-WeP">
+                        <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <button verticalHuggingPriority="750" id="ZR0-BC-2ZN">
+                                <rect key="frame" x="322" y="7" width="81" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="push" title="Button" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="b1u-Dt-N4G">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="emailButton:" target="e33-bl-tho" id="4fA-EX-q0L"/>
+                                </connections>
+                            </button>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="sc6-E7-Sph">
+                                <rect key="frame" x="309" y="232" width="107" height="24"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <textFieldCell key="cell" lineBreakMode="clipping" title="Label" id="3my-9A-JzI">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField verticalHuggingPriority="750" id="Vgd-C3-EP6">
+                                <rect key="frame" x="265" y="202" width="195" height="22"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" placeholderString="Your email" drawsBackground="YES" id="wEo-To-TaH">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField verticalHuggingPriority="750" id="lA4-6h-I83">
+                                <rect key="frame" x="265" y="55" width="195" height="105"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" placeholderString="Message" drawsBackground="YES" id="1Lm-yz-WTd">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" id="Sqk-nI-Vg6">
+                                <rect key="frame" x="20" y="123" width="108" height="101"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="GitHub-Mark-Light-120px-plus" id="hyt-Nl-lvP"/>
+                            </imageView>
+                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" id="uBF-R4-67u">
+                                <rect key="frame" x="-5" y="61" width="159" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="GitHub_Logo_White" id="gE4-lT-Oof"/>
+                            </imageView>
+                            <textField verticalHuggingPriority="750" id="5PN-QZ-dLI">
+                                <rect key="frame" x="265" y="170" width="195" height="22"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" placeholderString="Subject" drawsBackground="YES" id="Qxe-qB-H2C">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="4xw-uq-6HP">
+                                <rect key="frame" x="24" y="232" width="101" height="24"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <textFieldCell key="cell" lineBreakMode="clipping" title="Label" id="x37-Nf-lms">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <button verticalHuggingPriority="750" id="oGm-Az-Lda">
+                                <rect key="frame" x="27" y="13" width="95" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="push" title="Button" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="QkO-cH-4oA">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="githubButton:" target="e33-bl-tho" id="RJH-Hf-6dd"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                    </view>
+                    <connections>
+                        <outlet property="emailAddress" destination="Vgd-C3-EP6" id="dJ6-EV-jU2"/>
+                        <outlet property="emailButtonTitle" destination="ZR0-BC-2ZN" id="WwU-UV-2Jp"/>
+                        <outlet property="emailContents" destination="lA4-6h-I83" id="c76-6R-YpK"/>
+                        <outlet property="emailLabel" destination="sc6-E7-Sph" id="lyg-KD-XVE"/>
+                        <outlet property="githubButtonTitle" destination="oGm-Az-Lda" id="OG4-OJ-Om1"/>
+                        <outlet property="githubLabe" destination="4xw-uq-6HP" id="ibl-d5-cqN"/>
+                    </connections>
+                </viewController>
+                <customObject id="4aj-E1-OKE" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1549" y="225"/>
+        </scene>
         <!--Application-->
         <scene sceneID="JPo-4y-FX3">
             <objects>
                 <application id="hnw-xV-0zn" sceneMemberID="viewController">
                     <menu key="mainMenu" title="Main Menu" systemMenu="main" id="AYu-sK-qS6">
                         <items>
-                            <menuItem title="Service Checker" id="1Xt-HY-uBw">
+                            <menuItem title="macPinger" id="1Xt-HY-uBw">
                                 <modifierMask key="keyEquivalentModifierMask"/>
-                                <menu key="submenu" title="Service Checker" systemMenu="apple" id="uQy-DD-JDr">
+                                <menu key="submenu" title="macPinger" systemMenu="apple" id="uQy-DD-JDr">
                                     <items>
-                                        <menuItem title="About Service Checker" id="5kV-Vb-QxS">
+                                        <menuItem title="About macPinger" id="5kV-Vb-QxS">
                                             <modifierMask key="keyEquivalentModifierMask"/>
                                             <connections>
                                                 <action selector="orderFrontStandardAboutPanel:" target="Ady-hI-5gd" id="Exp-CZ-Vem"/>
@@ -196,7 +387,7 @@
                                             <menu key="submenu" title="Services" systemMenu="services" id="hz9-B4-Xy5"/>
                                         </menuItem>
                                         <menuItem isSeparatorItem="YES" id="4je-JR-u6R"/>
-                                        <menuItem title="Hide Service Checker" keyEquivalent="h" id="Olw-nP-bQN">
+                                        <menuItem title="Hide macPinger" keyEquivalent="h" id="Olw-nP-bQN">
                                             <connections>
                                                 <action selector="hide:" target="Ady-hI-5gd" id="PnN-Uc-m68"/>
                                             </connections>
@@ -214,7 +405,7 @@
                                             </connections>
                                         </menuItem>
                                         <menuItem isSeparatorItem="YES" id="kCx-OE-vgT"/>
-                                        <menuItem title="Quit Service Checker" keyEquivalent="q" id="4sb-4s-VLi">
+                                        <menuItem title="Quit macPinger" keyEquivalent="q" id="4sb-4s-VLi">
                                             <connections>
                                                 <action selector="terminate:" target="Ady-hI-5gd" id="Te7-pn-YzF"/>
                                             </connections>
@@ -774,6 +965,7 @@
                                             <modifierMask key="keyEquivalentModifierMask" option="YES" command="YES"/>
                                             <connections>
                                                 <action selector="toggleToolbarShown:" target="Ady-hI-5gd" id="BXY-wc-z0C"/>
+                                                <segue destination="kRF-Oa-Qb5" kind="show" id="Oi5-HC-d8x"/>
                                             </connections>
                                         </menuItem>
                                         <menuItem title="Customize Toolbar…" id="1UK-8n-QPP">
@@ -827,9 +1019,10 @@
                                 <modifierMask key="keyEquivalentModifierMask"/>
                                 <menu key="submenu" title="Help" systemMenu="help" id="F2S-fz-NVQ">
                                     <items>
-                                        <menuItem title="Service Checker Help" keyEquivalent="?" id="FKE-Sm-Kum">
+                                        <menuItem title="macPinger Help" keyEquivalent="?" id="FKE-Sm-Kum">
                                             <connections>
                                                 <action selector="showHelp:" target="Ady-hI-5gd" id="y7X-2Q-9no"/>
+                                                <segue destination="bte-a9-vdy" kind="show" id="PJG-U0-C7W"/>
                                             </connections>
                                         </menuItem>
                                     </items>
@@ -841,7 +1034,7 @@
                         <outlet property="delegate" destination="Voe-Tx-rLC" id="PrD-fu-P6m"/>
                     </connections>
                 </application>
-                <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="Service_Checker" customModuleProvider="target"/>
+                <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="macPinger" customModuleProvider="target"/>
                 <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
                 <customObject id="Ady-hI-5gd" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -871,7 +1064,7 @@
         <!--View Controller-->
         <scene sceneID="hIz-AP-VOD">
             <objects>
-                <viewController id="XfG-lQ-9wD" customClass="ViewController" customModule="Service_Checker" sceneMemberID="viewController">
+                <viewController id="XfG-lQ-9wD" customClass="ViewController" customModule="macPinger" sceneMemberID="viewController">
                     <view key="view" wantsLayer="YES" id="m2S-Jp-Qdl">
                         <rect key="frame" x="0.0" y="0.0" width="446" height="534"/>
                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
@@ -1032,4 +1225,8 @@
             <point key="canvasLocation" x="75" y="786"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="GitHub-Mark-Light-120px-plus" width="120" height="120"/>
+        <image name="GitHub_Logo_White" width="1000" height="410"/>
+    </resources>
 </document>

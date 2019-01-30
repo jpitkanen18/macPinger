@@ -19,6 +19,8 @@ class PreferencesViewController: NSViewController {
     @IBOutlet var hostnameThird: NSTextField!
     @IBOutlet var buttonNameThird: NSTextField!
     @IBOutlet var buttonNameSecond: NSTextField!
+    @IBOutlet weak var addressLabel: NSTextField!
+    @IBOutlet weak var buttonNameLabel: NSTextField!
     override func viewDidAppear() {
         self.view.window?.title = "Preferences"
     }
@@ -29,6 +31,10 @@ class PreferencesViewController: NSViewController {
         self.settingButton2.title = "Set"
         self.settingButton3.title = "Set"
         self.resetButton.title = "Reset"
+        self.addressLabel.stringValue = "Address"
+        self.buttonNameLabel.stringValue = "Name"
+        self.addressLabel.alignment = NSTextAlignment.center
+        self.buttonNameLabel.alignment = NSTextAlignment.center
 }
     @IBAction func resetButtonPress(_ sender: Any) {
         buttonName1 = "Apple"

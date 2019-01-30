@@ -23,6 +23,7 @@ class ViewController: NSViewController {
     @IBOutlet weak var labelGooglePing: NSTextField!
     @IBOutlet weak var labelGithubPing: NSTextField!
     @IBOutlet weak var labelApplePing: NSTextField!
+    @IBOutlet weak var testButton: NSImageView!
     
     var huutista = NSColor(deviceRed: 266, green: 0, blue: 0, alpha: 1.0)
     var onnistu = NSColor(deviceRed: 0, green: 266, blue: 0, alpha: 1.0)
@@ -54,12 +55,15 @@ class ViewController: NSViewController {
     
     override func viewDidAppear() {
         super.viewDidAppear()
-        self.view.window?.title = "System Status Checker v1.0"
+        self.view.window?.title = "macPinger v1.0"
         self.buttonAppleOutlet.title = buttonName1
         notificationCenter.addObserver(self, selector: #selector(settingFirst(_:)), name: .buttonFirstHasBeenPressed, object: nil)
         notificationCenter.addObserver(self, selector: #selector(resetSettings(_:)), name: .resetButtonHasBeenPressed, object: nil)
         notificationCenter.addObserver(self, selector: #selector(settingSecond(_:)), name: .buttonSecondHasBeenPressed, object: nil)
         notificationCenter.addObserver(self, selector: #selector(settingThird(_:)), name: .buttonThirdHasBeenPressed, object: nil)
+        self.view.window?.titleVisibility = NSWindow.TitleVisibility.hidden
+        self.view.window?.titlebarAppearsTransparent = true
+        self.view.window?.styleMask.insert(.fullSizeContentView)
         
     }
     @IBAction func testButton(_ sender: Any) {
@@ -194,7 +198,7 @@ class ViewController: NSViewController {
             }
         })
         }}
-    var bensi = "System Status Checker v1.0"
+    var bensi = "MacPinger v1.0"
     var jese = "Jesse Pitkänen 2019"
     override func viewDidLoad() {
         super.viewDidLoad()
