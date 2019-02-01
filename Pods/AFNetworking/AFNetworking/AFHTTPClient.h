@@ -80,7 +80,7 @@ typedef enum {
     AFNetworkReachabilityStatusReachableViaWiFi = 2,
 } AFNetworkReachabilityStatus;
 #else
-    #warning SystemConfiguration framework not found in project, or not included in precompiled header. Network reachability functionality will not be available.
+    //#warning SystemConfiguration framework not found in project, or not included in precompiled header. Network reachability functionality will not be available.
 #endif
 
 #ifndef __UTTYPE__
@@ -540,7 +540,7 @@ extern NSTimeInterval const kAFUploadStream3GSuggestedDelay;
  
  @param data The data to be encoded and appended to the form data.
  @param name The name to be associated with the specified data. This parameter must not be `nil`.
- @param filename The filename to be associated with the specified data. This parameter must not be `nil`.
+ @param fileName The filename to be associated with the specified data. This parameter must not be `nil`.
  @param mimeType The MIME type of the specified data. (For example, the MIME type for a JPEG image is image/jpeg.) For a list of valid MIME types, see http://www.iana.org/assignments/media-types/. This parameter must not be `nil`.
  */
 - (void)appendPartWithFileData:(NSData *)data

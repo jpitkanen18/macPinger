@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0930"
+   LastUpgradeVersion = "1010"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "F393F0F44106E7653AB11E3CBEA8FCEB"
+               BlueprintIdentifier = "1D51A7415A9054150CC71B856C171201"
                BuildableName = "Pods_macPinger.framework"
                BlueprintName = "Pods-macPinger"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "F393F0F44106E7653AB11E3CBEA8FCEB"
+            BlueprintIdentifier = "1D51A7415A9054150CC71B856C171201"
             BuildableName = "Pods_macPinger.framework"
             BlueprintName = "Pods-macPinger"
             ReferencedContainer = "container:Pods.xcodeproj">

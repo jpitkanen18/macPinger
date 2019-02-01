@@ -8,7 +8,7 @@
 
 import XCTest
 
-class Service_CheckerUITests: XCTestCase {
+class macPingerUITests: XCTestCase {
 
     override func setUp() {
         // Put setup code here. This method is called before the invocation of each test method in the class.

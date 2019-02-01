@@ -198,6 +198,7 @@ class ViewController: NSViewController {
             }
         })
         }}
+    @IBOutlet weak var labelJeseHidden: NSTextField!
     var bensi = "MacPinger v1.0"
     var jese = "Jesse Pitkänen 2019"
     override func viewDidLoad() {
@@ -206,6 +207,8 @@ class ViewController: NSViewController {
         labelJese.stringValue = jese
         labelApp.alignment = NSTextAlignment.center
         labelJese.alignment = NSTextAlignment.center
+        labelApp.isHidden = true
+        labelJeseHidden.isHidden = true
         pingResultLabel.isHidden = true
         pingResultLabelGH.isHidden = true
         pingResultLabelApple.isHidden = true

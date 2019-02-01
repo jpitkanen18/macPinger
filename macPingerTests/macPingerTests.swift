@@ -7,7 +7,7 @@
 //
 
 import XCTest
-@testable import Service_Checker
+@testable import macPinger
 
 class Service_CheckerTests: XCTestCase {
 

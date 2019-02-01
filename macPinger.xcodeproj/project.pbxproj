@@ -14,9 +14,9 @@
 		E8D49BBA21F5BCEE00DC594F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8D49BB921F5BCEE00DC594F /* ViewController.swift */; };
 		E8D49BBC21F5BCF100DC594F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8D49BBB21F5BCF100DC594F /* Assets.xcassets */; };
 		E8D49BBF21F5BCF100DC594F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8D49BBD21F5BCF100DC594F /* Main.storyboard */; };
-		E8D49BCB21F5BCF100DC594F /* Service_CheckerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8D49BCA21F5BCF100DC594F /* Service_CheckerTests.swift */; };
-		E8D49BD621F5BCF100DC594F /* Service_CheckerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8D49BD521F5BCF100DC594F /* Service_CheckerUITests.swift */; };
-		E8EB14A421F72D9800B76892 /* Service Checker.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8EB14A321F72D9800B76892 /* Service Checker.swift */; };
+		E8D49BCB21F5BCF100DC594F /* macPingerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8D49BCA21F5BCF100DC594F /* macPingerTests.swift */; };
+		E8D49BD621F5BCF100DC594F /* macPingerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8D49BD521F5BCF100DC594F /* macPingerUITests.swift */; };
+		E8EB14A421F72D9800B76892 /* macPingerGlobalVars.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8EB14A321F72D9800B76892 /* macPingerGlobalVars.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -25,14 +25,14 @@
 			containerPortal = E8D49BAC21F5BCEE00DC594F /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = E8D49BB321F5BCEE00DC594F;
-			remoteInfo = "Service Checker";
+			remoteInfo = macPinger;
 		};
 		E8D49BD221F5BCF100DC594F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = E8D49BAC21F5BCEE00DC594F /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = E8D49BB321F5BCEE00DC594F;
-			remoteInfo = "Service Checker";
+			remoteInfo = macPinger;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -41,22 +41,21 @@
 		6D3639D29E5302F58917DA93 /* Pods_macPinger.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_macPinger.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A55F2049FBEB27F5DD6CB5DA /* Pods-macPinger.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-macPinger.debug.xcconfig"; path = "Pods/Target Support Files/Pods-macPinger/Pods-macPinger.debug.xcconfig"; sourceTree = "<group>"; };
 		E822F14121F70F48009418EF /* PreferencesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferencesViewController.swift; sourceTree = "<group>"; };
-		E856CDF321F5DD4A00FEE309 /* Service Checker.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Service Checker.entitlements"; sourceTree = "<group>"; };
+		E856CDF321F5DD4A00FEE309 /* macPinger.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macPinger.entitlements; sourceTree = "<group>"; };
 		E869B21021FFB9480075290F /* HelpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpViewController.swift; sourceTree = "<group>"; };
 		E8D49BB421F5BCEE00DC594F /* macPinger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = macPinger.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		E8D49BB721F5BCEE00DC594F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = "Service Checker/AppDelegate.swift"; sourceTree = SOURCE_ROOT; };
+		E8D49BB721F5BCEE00DC594F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = macPinger/AppDelegate.swift; sourceTree = SOURCE_ROOT; };
 		E8D49BB921F5BCEE00DC594F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		E8D49BBB21F5BCF100DC594F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E8D49BBE21F5BCF100DC594F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E8D49BC021F5BCF100DC594F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E8D49BC121F5BCF100DC594F /* Service_Checker.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Service_Checker.entitlements; sourceTree = "<group>"; };
 		E8D49BC621F5BCF100DC594F /* macPingerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = macPingerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		E8D49BCA21F5BCF100DC594F /* Service_CheckerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service_CheckerTests.swift; sourceTree = "<group>"; };
+		E8D49BCA21F5BCF100DC594F /* macPingerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = macPingerTests.swift; sourceTree = "<group>"; };
 		E8D49BCC21F5BCF100DC594F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E8D49BD121F5BCF100DC594F /* macPingerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = macPingerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		E8D49BD521F5BCF100DC594F /* Service_CheckerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service_CheckerUITests.swift; sourceTree = "<group>"; };
+		E8D49BD521F5BCF100DC594F /* macPingerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = macPingerUITests.swift; sourceTree = "<group>"; };
 		E8D49BD721F5BCF100DC594F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E8EB14A321F72D9800B76892 /* Service Checker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Service Checker.swift"; sourceTree = "<group>"; };
+		E8EB14A321F72D9800B76892 /* macPingerGlobalVars.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = macPingerGlobalVars.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,9 +104,9 @@
 		E8D49BAB21F5BCEE00DC594F = {
 			isa = PBXGroup;
 			children = (
-				E8D49BB621F5BCEE00DC594F /* Service Checker */,
-				E8D49BC921F5BCF100DC594F /* Service CheckerTests */,
-				E8D49BD421F5BCF100DC594F /* Service CheckerUITests */,
+				E8D49BB621F5BCEE00DC594F /* macPinger */,
+				E8D49BC921F5BCF100DC594F /* macPingerTests */,
+				E8D49BD421F5BCF100DC594F /* macPingerUITests */,
 				E8D49BB521F5BCEE00DC594F /* Products */,
 				52D9D490876EAC2301CA048C /* Pods */,
 				0A97E65DC62E270F2270D742 /* Frameworks */,
@@ -124,39 +123,38 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		E8D49BB621F5BCEE00DC594F /* Service Checker */ = {
+		E8D49BB621F5BCEE00DC594F /* macPinger */ = {
 			isa = PBXGroup;
 			children = (
-				E856CDF321F5DD4A00FEE309 /* Service Checker.entitlements */,
+				E856CDF321F5DD4A00FEE309 /* macPinger.entitlements */,
 				E8D49BB721F5BCEE00DC594F /* AppDelegate.swift */,
 				E8D49BB921F5BCEE00DC594F /* ViewController.swift */,
 				E8D49BBB21F5BCF100DC594F /* Assets.xcassets */,
 				E8D49BBD21F5BCF100DC594F /* Main.storyboard */,
 				E8D49BC021F5BCF100DC594F /* Info.plist */,
-				E8D49BC121F5BCF100DC594F /* Service_Checker.entitlements */,
 				E822F14121F70F48009418EF /* PreferencesViewController.swift */,
-				E8EB14A321F72D9800B76892 /* Service Checker.swift */,
+				E8EB14A321F72D9800B76892 /* macPingerGlobalVars.swift */,
 				E869B21021FFB9480075290F /* HelpViewController.swift */,
 			);
-			path = "Service Checker";
+			path = macPinger;
 			sourceTree = "<group>";
 		};
-		E8D49BC921F5BCF100DC594F /* Service CheckerTests */ = {
+		E8D49BC921F5BCF100DC594F /* macPingerTests */ = {
 			isa = PBXGroup;
 			children = (
-				E8D49BCA21F5BCF100DC594F /* Service_CheckerTests.swift */,
+				E8D49BCA21F5BCF100DC594F /* macPingerTests.swift */,
 				E8D49BCC21F5BCF100DC594F /* Info.plist */,
 			);
-			path = "Service CheckerTests";
+			path = macPingerTests;
 			sourceTree = "<group>";
 		};
-		E8D49BD421F5BCF100DC594F /* Service CheckerUITests */ = {
+		E8D49BD421F5BCF100DC594F /* macPingerUITests */ = {
 			isa = PBXGroup;
 			children = (
-				E8D49BD521F5BCF100DC594F /* Service_CheckerUITests.swift */,
+				E8D49BD521F5BCF100DC594F /* macPingerUITests.swift */,
 				E8D49BD721F5BCF100DC594F /* Info.plist */,
 			);
-			path = "Service CheckerUITests";
+			path = macPingerUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -177,7 +175,7 @@
 			dependencies = (
 			);
 			name = macPinger;
-			productName = "Service Checker";
+			productName = macPinger;
 			productReference = E8D49BB421F5BCEE00DC594F /* macPinger.app */;
 			productType = "com.apple.product-type.application";
 		};
@@ -195,7 +193,7 @@
 				E8D49BC821F5BCF100DC594F /* PBXTargetDependency */,
 			);
 			name = macPingerTests;
-			productName = "Service CheckerTests";
+			productName = macPingerTests;
 			productReference = E8D49BC621F5BCF100DC594F /* macPingerTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
@@ -213,7 +211,7 @@
 				E8D49BD321F5BCF100DC594F /* PBXTargetDependency */,
 			);
 			name = macPingerUITests;
-			productName = "Service CheckerUITests";
+			productName = macPingerUITests;
 			productReference = E8D49BD121F5BCF100DC594F /* macPingerUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
@@ -345,7 +343,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E8D49BBA21F5BCEE00DC594F /* ViewController.swift in Sources */,
-				E8EB14A421F72D9800B76892 /* Service Checker.swift in Sources */,
+				E8EB14A421F72D9800B76892 /* macPingerGlobalVars.swift in Sources */,
 				E8D49BB821F5BCEE00DC594F /* AppDelegate.swift in Sources */,
 				E822F14221F70F48009418EF /* PreferencesViewController.swift in Sources */,
 				E869B21221FFB9480075290F /* HelpViewController.swift in Sources */,
@@ -356,7 +354,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E8D49BCB21F5BCF100DC594F /* Service_CheckerTests.swift in Sources */,
+				E8D49BCB21F5BCF100DC594F /* macPingerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -364,7 +362,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E8D49BD621F5BCF100DC594F /* Service_CheckerUITests.swift in Sources */,
+				E8D49BD621F5BCF100DC594F /* macPingerUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -390,7 +388,7 @@
 				E8D49BBE21F5BCF100DC594F /* Base */,
 			);
 			name = Main.storyboard;
-			path = "Service Checker";
+			path = macPinger;
 			sourceTree = SOURCE_ROOT;
 			usesTabs = 0;
 		};
@@ -517,12 +515,12 @@
 			baseConfigurationReference = A55F2049FBEB27F5DD6CB5DA /* Pods-macPinger.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = "Service Checker/Service Checker.entitlements";
+				CODE_SIGN_ENTITLEMENTS = macPinger/macPinger.entitlements;
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 74RWVTYMM3;
-				INFOPLIST_FILE = "Service Checker/Info.plist";
+				INFOPLIST_FILE = macPinger/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
@@ -547,12 +545,12 @@
 			baseConfigurationReference = 3686C275776310826633B49A /* Pods-macPinger.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = "Service Checker/Service Checker.entitlements";
+				CODE_SIGN_ENTITLEMENTS = macPinger/macPinger.entitlements;
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 74RWVTYMM3;
-				INFOPLIST_FILE = "Service Checker/Info.plist";
+				INFOPLIST_FILE = macPinger/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
@@ -580,13 +578,13 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 74RWVTYMM3;
-				INFOPLIST_FILE = "Service CheckerTests/Info.plist";
+				INFOPLIST_FILE = macPingerTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 					"@loader_path/../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "jbenisoy.Service-CheckerTests";
+				PRODUCT_BUNDLE_IDENTIFIER = jbenisoy.macPingerTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/macPinger.app/Contents/MacOS/macPinger";
@@ -601,13 +599,13 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 74RWVTYMM3;
-				INFOPLIST_FILE = "Service CheckerTests/Info.plist";
+				INFOPLIST_FILE = macPingerTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 					"@loader_path/../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "jbenisoy.Service-CheckerTests";
+				PRODUCT_BUNDLE_IDENTIFIER = jbenisoy.macPingerTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/macPinger.app/Contents/MacOS/macPinger";
@@ -621,16 +619,16 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 74RWVTYMM3;
-				INFOPLIST_FILE = "Service CheckerUITests/Info.plist";
+				INFOPLIST_FILE = macPingerUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 					"@loader_path/../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "jbenisoy.Service-CheckerUITests";
+				PRODUCT_BUNDLE_IDENTIFIER = jbenisoy.macPingerUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TEST_TARGET_NAME = "Service Checker";
+				TEST_TARGET_NAME = macPinger;
 			};
 			name = Debug;
 		};
@@ -641,16 +639,16 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 74RWVTYMM3;
-				INFOPLIST_FILE = "Service CheckerUITests/Info.plist";
+				INFOPLIST_FILE = macPingerUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 					"@loader_path/../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "jbenisoy.Service-CheckerUITests";
+				PRODUCT_BUNDLE_IDENTIFIER = jbenisoy.macPingerUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TEST_TARGET_NAME = "Service Checker";
+				TEST_TARGET_NAME = macPinger;
 			};
 			name = Release;
 		};

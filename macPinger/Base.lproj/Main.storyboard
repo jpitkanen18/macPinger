@@ -37,7 +37,7 @@
                             <textField verticalHuggingPriority="750" id="X2p-CI-TDy">
                                 <rect key="frame" x="39" y="193" width="96" height="22"/>
                                 <autoresizingMask key="autoresizingMask"/>
-                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" placeholderString="i.e google.com" drawsBackground="YES" id="h41-GB-eFd">
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" placeholderString="i.e apple.com" drawsBackground="YES" id="h41-GB-eFd">
                                     <font key="font" usesAppearanceFont="YES"/>
                                     <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
@@ -255,7 +255,7 @@
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
-                            <textField verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="YES" id="lA4-6h-I83">
+                            <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" allowsCharacterPickerTouchBarItem="YES" id="lA4-6h-I83">
                                 <rect key="frame" x="265" y="55" width="195" height="105"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <textFieldCell key="cell" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" placeholderString="Your message (use option + enter/return for a line break)" drawsBackground="YES" id="1Lm-yz-WTd">
@@ -1178,6 +1178,11 @@
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
+                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" id="XsH-jd-qZW">
+                                <rect key="frame" x="94" y="344" width="328" height="170"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="logomPUI" id="nel-hx-GSk"/>
+                            </imageView>
                         </subviews>
                         <shadow key="shadow">
                             <color key="color" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1195,6 +1200,7 @@
                         <outlet property="labelGithubPing" destination="oc8-G5-LRS" id="uGS-W7-UBW"/>
                         <outlet property="labelGooglePing" destination="ANa-cA-IXw" id="6my-3q-1Vo"/>
                         <outlet property="labelJese" destination="rPc-TL-mYw" id="Rpc-g9-q6r"/>
+                        <outlet property="labelJeseHidden" destination="3wo-as-mSe" id="yBN-pS-L8i"/>
                         <outlet property="pingResultLabel" destination="LLy-Qk-8ac" id="vex-QC-IjR"/>
                         <outlet property="pingResultLabelApple" destination="QA0-CC-nbv" id="tWx-Gp-wMQ"/>
                         <outlet property="pingResultLabelGH" destination="R4n-Qe-xvt" id="f9I-jS-mpY"/>
@@ -1208,5 +1214,6 @@
     <resources>
         <image name="GitHub-Mark-Light-120px-plus" width="120" height="120"/>
         <image name="GitHub_Logo_White" width="1000" height="410"/>
+        <image name="logomPUI" width="1024" height="371"/>
     </resources>
 </document>
