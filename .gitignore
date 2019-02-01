@@ -2385,3 +2385,5 @@ DerivedData/Service Checker/Logs/Issues/LogStoreManifest.plist
 DerivedData/Service Checker/OpenQuickly-ReferencedFrameworks.index-v1
 DerivedData/
 Package.swift
+build/
+Build/

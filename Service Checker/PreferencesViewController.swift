@@ -21,6 +21,8 @@ class PreferencesViewController: NSViewController {
     @IBOutlet var buttonNameSecond: NSTextField!
     @IBOutlet weak var addressLabel: NSTextField!
     @IBOutlet weak var buttonNameLabel: NSTextField!
+    @IBOutlet weak var labelWTF: NSTextField!
+    let huutistaPref = NSColor(deviceRed: 266, green: 0, blue: 0, alpha: 1.0)
     override func viewDidAppear() {
         self.view.window?.title = "Preferences"
     }
@@ -35,6 +37,7 @@ class PreferencesViewController: NSViewController {
         self.buttonNameLabel.stringValue = "Name"
         self.addressLabel.alignment = NSTextAlignment.center
         self.buttonNameLabel.alignment = NSTextAlignment.center
+        self.labelWTF.isHidden = true
 }
     @IBAction func resetButtonPress(_ sender: Any) {
         buttonName1 = "Apple"
@@ -49,28 +52,50 @@ class PreferencesViewController: NSViewController {
         
         buttonPressedYes1 = true
         let hostnameLegit: String = hostnameFirst.stringValue
-        hostnameUser1 = hostnameLegit
         let buttonLegit = buttonNameFirst.stringValue
-        buttonName1 = buttonLegit
-        NotificationCenter.default.post(name: .buttonFirstHasBeenPressed, object: nil)
+        if (hostnameFirst.stringValue == "" || buttonNameFirst.stringValue == ""){
+            labelWTF.stringValue = "You must set an IP address and a name!"
+            labelWTF.textColor = huutistaPref
+            labelWTF.isHidden = false
+        } else {
+            hostnameUser1 = hostnameLegit
+            buttonName1 = buttonLegit
+            NotificationCenter.default.post(name: .buttonFirstHasBeenPressed, object: nil)
+            labelWTF.isHidden = true
+        }
+
     }
     @IBAction func buttonPressSecond(_ sender: Any) {
         
         buttonPressedYes2 = true
         let hostnameLegit2: String = hostnameSecond.stringValue
-        hostnameUser2 = hostnameLegit2
-        let buttonLegit2 = buttonNameSecond.stringValue
-        buttonName2 = buttonLegit2
-        NotificationCenter.default.post(name: .buttonSecondHasBeenPressed, object: nil)
+        let buttonLegi2t = buttonNameSecond.stringValue
+        if (hostnameSecond.stringValue == "" || buttonNameSecond.stringValue == ""){
+            labelWTF.stringValue = "You must set an IP address and a name!"
+            labelWTF.textColor = huutistaPref
+            labelWTF.isHidden = false
+        } else {
+            hostnameUser2 = hostnameLegit2
+            buttonName2 = buttonLegi2t
+            NotificationCenter.default.post(name: .buttonSecondHasBeenPressed, object: nil)
+            labelWTF.isHidden = true
+        }
     }
     @IBAction func buttonPressThird(_ sender: Any) {
         
         buttonPressedYes3 = true
         let hostnameLegit3: String = hostnameThird.stringValue
-        hostnameUser3 = hostnameLegit3
         let buttonLegit3 = buttonNameThird.stringValue
-        buttonName3 = buttonLegit3
-        NotificationCenter.default.post(name: .buttonThirdHasBeenPressed, object: nil)
+        if (hostnameThird.stringValue == "" || buttonNameThird.stringValue == ""){
+            labelWTF.stringValue = "You must set an IP address and a name!"
+            labelWTF.textColor = huutistaPref
+            labelWTF.isHidden = false
+        } else {
+            hostnameUser3 = hostnameLegit3
+            buttonName3 = buttonLegit3
+            NotificationCenter.default.post(name: .buttonThirdHasBeenPressed, object: nil)
+            labelWTF.isHidden = true
+        }
     }
     
     

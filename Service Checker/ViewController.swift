@@ -85,7 +85,7 @@ class ViewController: NSViewController {
                     print(hostnameUser1)
                 }
                 if let error = error {
-                    self.pingResultLabel.stringValue = ("Service Offline:\n \(error.localizedDescription)\nCheck Your Internet Connection!")
+                    self.pingResultLabelApple.stringValue = ("Service Offline:\n \(error.localizedDescription)\nCheck Your Internet Connection!")
                     self.pingResultLabelApple.isHidden = false
                     self.indicatorApple.isHidden = false
                     self.indicatorApple.fillColor = self.huutista
@@ -171,9 +171,9 @@ class ViewController: NSViewController {
                 }
                 if let error = error {
                     self.pingResultLabel.stringValue = ("Service Offline:\n \(error.localizedDescription)\nCheck Your Internet Connection!")
-                    self.pingResultLabelApple.isHidden = false
-                    self.indicatorApple.isHidden = false
-                    self.indicatorApple.fillColor = self.huutista
+                    self.pingResultLabel.isHidden = false
+                    self.indicatorGoogle.isHidden = false
+                    self.indicatorGoogle.fillColor = self.huutista
                     
                 }
             }

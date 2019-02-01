@@ -166,6 +166,15 @@
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="cBU-iC-qja">
+                                <rect key="frame" x="37" y="64" width="327" height="17"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <textFieldCell key="cell" lineBreakMode="clipping" title="Label" id="2Nd-tQ-L7Z">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
                         </subviews>
                     </view>
                     <connections>
@@ -177,6 +186,7 @@
                         <outlet property="hostnameFirst" destination="X2p-CI-TDy" id="w0m-y2-hEB"/>
                         <outlet property="hostnameSecond" destination="fQU-L5-Db5" id="7ZX-Dz-18s"/>
                         <outlet property="hostnameThird" destination="7n2-P5-dDp" id="OLx-w5-U4B"/>
+                        <outlet property="labelWTF" destination="cBU-iC-qja" id="gtJ-ME-RIo"/>
                         <outlet property="resetButton" destination="k2w-HJ-aos" id="jQA-e9-fjz"/>
                         <outlet property="settingButton1" destination="5zv-mE-p1G" id="tUm-2j-doE"/>
                         <outlet property="settingButton2" destination="QiX-wE-oBw" id="CJ0-Jn-DPQ"/>
@@ -207,56 +217,6 @@
                 <customObject id="poI-E7-DmU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="842" y="250"/>
-        </scene>
-        <!--Window Controller-->
-        <scene sceneID="9Vf-hp-lwb">
-            <objects>
-                <windowController id="kRF-Oa-Qb5" sceneMemberID="viewController">
-                    <window key="window" title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" frameAutosaveName="" animationBehavior="default" id="TSt-qD-pnt">
-                        <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
-                        <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
-                        <rect key="contentRect" x="294" y="313" width="480" height="270"/>
-                        <rect key="screenRect" x="0.0" y="0.0" width="1920" height="1057"/>
-                        <connections>
-                            <outlet property="delegate" destination="kRF-Oa-Qb5" id="uoC-ct-Ts0"/>
-                        </connections>
-                    </window>
-                    <connections>
-                        <segue destination="Vwb-NC-AwO" kind="relationship" relationship="window.shadowedContentViewController" id="C42-W3-9dh"/>
-                    </connections>
-                </windowController>
-                <customObject id="hPV-4o-qsn" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="717" y="728"/>
-        </scene>
-        <!--Image Button Test-->
-        <scene sceneID="Bek-In-4UY">
-            <objects>
-                <viewController id="Vwb-NC-AwO" customClass="imageButtonTest" customModule="macPinger" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" id="l6m-yu-u9H">
-                        <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <subviews>
-                            <button id="Wqz-qP-d7Q">
-                                <rect key="frame" x="20" y="20" width="111" height="72"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="rXy-5c-6zG">
-                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                                    <font key="font" metaFont="system"/>
-                                </buttonCell>
-                                <connections>
-                                    <action selector="buttonMeme:" target="Vwb-NC-AwO" id="wIi-AZ-dRr"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                    </view>
-                    <connections>
-                        <outlet property="buttonImage" destination="Wqz-qP-d7Q" id="n8A-tf-Mhr"/>
-                    </connections>
-                </viewController>
-                <customObject id="cqd-Yq-jnd" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1424" y="703"/>
         </scene>
         <!--Help View Controller-->
         <scene sceneID="GmY-w9-KnW">
@@ -289,16 +249,16 @@
                             <textField verticalHuggingPriority="750" id="Vgd-C3-EP6">
                                 <rect key="frame" x="265" y="202" width="195" height="22"/>
                                 <autoresizingMask key="autoresizingMask"/>
-                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" placeholderString="Your email" drawsBackground="YES" id="wEo-To-TaH">
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" placeholderString="Your email address" drawsBackground="YES" id="wEo-To-TaH">
                                     <font key="font" metaFont="system"/>
                                     <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
-                            <textField verticalHuggingPriority="750" id="lA4-6h-I83">
+                            <textField verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="YES" id="lA4-6h-I83">
                                 <rect key="frame" x="265" y="55" width="195" height="105"/>
                                 <autoresizingMask key="autoresizingMask"/>
-                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" placeholderString="Message" drawsBackground="YES" id="1Lm-yz-WTd">
+                                <textFieldCell key="cell" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" placeholderString="Your message (use option + enter/return for a line break)" drawsBackground="YES" id="1Lm-yz-WTd">
                                     <font key="font" metaFont="system"/>
                                     <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
@@ -314,15 +274,6 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="GitHub_Logo_White" id="gE4-lT-Oof"/>
                             </imageView>
-                            <textField verticalHuggingPriority="750" id="5PN-QZ-dLI">
-                                <rect key="frame" x="265" y="170" width="195" height="22"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" placeholderString="Subject" drawsBackground="YES" id="Qxe-qB-H2C">
-                                    <font key="font" metaFont="system"/>
-                                    <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
-                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
-                                </textFieldCell>
-                            </textField>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="4xw-uq-6HP">
                                 <rect key="frame" x="24" y="232" width="101" height="24"/>
                                 <autoresizingMask key="autoresizingMask"/>
@@ -343,6 +294,33 @@
                                     <action selector="githubButton:" target="e33-bl-tho" id="RJH-Hf-6dd"/>
                                 </connections>
                             </button>
+                            <textField verticalHuggingPriority="750" id="eXw-Id-7YF">
+                                <rect key="frame" x="265" y="170" width="96" height="22"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" placeholderString="Your name" drawsBackground="YES" id="ZVD-8B-VmU">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="BdG-2P-7HT">
+                                <rect key="frame" x="263" y="16" width="37" height="17"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <textFieldCell key="cell" lineBreakMode="clipping" title="Label" id="Mug-bS-r0G">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField verticalHuggingPriority="750" id="5PN-QZ-dLI">
+                                <rect key="frame" x="365" y="170" width="95" height="22"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" placeholderString="Subject" drawsBackground="YES" id="Qxe-qB-H2C">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
                         </subviews>
                     </view>
                     <connections>
@@ -350,8 +328,11 @@
                         <outlet property="emailButtonTitle" destination="ZR0-BC-2ZN" id="WwU-UV-2Jp"/>
                         <outlet property="emailContents" destination="lA4-6h-I83" id="c76-6R-YpK"/>
                         <outlet property="emailLabel" destination="sc6-E7-Sph" id="lyg-KD-XVE"/>
+                        <outlet property="emailName" destination="eXw-Id-7YF" id="zLc-ER-3uv"/>
+                        <outlet property="emailSubjct" destination="5PN-QZ-dLI" id="tmb-GN-LPG"/>
                         <outlet property="githubButtonTitle" destination="oGm-Az-Lda" id="OG4-OJ-Om1"/>
                         <outlet property="githubLabe" destination="4xw-uq-6HP" id="ibl-d5-cqN"/>
+                        <outlet property="sentLabel" destination="BdG-2P-7HT" id="GLg-Fg-BoO"/>
                     </connections>
                 </viewController>
                 <customObject id="4aj-E1-OKE" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
@@ -965,7 +946,6 @@
                                             <modifierMask key="keyEquivalentModifierMask" option="YES" command="YES"/>
                                             <connections>
                                                 <action selector="toggleToolbarShown:" target="Ady-hI-5gd" id="BXY-wc-z0C"/>
-                                                <segue destination="kRF-Oa-Qb5" kind="show" id="Oi5-HC-d8x"/>
                                             </connections>
                                         </menuItem>
                                         <menuItem title="Customize Toolbar…" id="1UK-8n-QPP">
