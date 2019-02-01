@@ -1,5 +1,5 @@
 # macPinger
-[![version](https://img.shields.io/badge/version-alpha%20v1.1-cyan.svg)](https://img.shields.io/badge/version-alpha%20v1.1-cyan.svg)
+[![version](https://img.shields.io/badge/version-Alpha%20v1.1-blue.svg)](https://img.shields.io/badge/version-Alpha%20v1.1-blue.svg)
 [![language](https://img.shields.io/badge/language-Swift%204.2-orange.svg)](https://developer.apple.com/swift/)
 
 
