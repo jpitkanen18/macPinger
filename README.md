@@ -1,5 +1,5 @@
 # macPinger
-[![language](https://img.shields.io/badge/language-Swift%204.2-orange.svg/https:/)]
+[![language](https://img.shields.io/badge/version-Alpha%20v1.1-cyan.svg)](www.swift.apple.com)
 [![version](img.shields.io/badge/version-Alpha%20v1.1-cyan.svg)]
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
