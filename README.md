@@ -5,6 +5,7 @@
 
 
 Simple macOS application for checking website/IP Address availability
+
 Very early Alpha, made as a side project by a beginning programmer
 
 
