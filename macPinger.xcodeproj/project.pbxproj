@@ -16,6 +16,7 @@
 		E8D49BBF21F5BCF100DC594F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8D49BBD21F5BCF100DC594F /* Main.storyboard */; };
 		E8D49BCB21F5BCF100DC594F /* macPingerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8D49BCA21F5BCF100DC594F /* macPingerTests.swift */; };
 		E8D49BD621F5BCF100DC594F /* macPingerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8D49BD521F5BCF100DC594F /* macPingerUITests.swift */; };
+		E8E293D822062E64002AF0D0 /* LogsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8E293D722062E64002AF0D0 /* LogsViewController.swift */; };
 		E8EB14A421F72D9800B76892 /* macPingerGlobalVars.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8EB14A321F72D9800B76892 /* macPingerGlobalVars.swift */; };
 /* End PBXBuildFile section */
 
@@ -55,6 +56,7 @@
 		E8D49BD121F5BCF100DC594F /* macPingerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = macPingerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8D49BD521F5BCF100DC594F /* macPingerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = macPingerUITests.swift; sourceTree = "<group>"; };
 		E8D49BD721F5BCF100DC594F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E8E293D722062E64002AF0D0 /* LogsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogsViewController.swift; sourceTree = "<group>"; };
 		E8EB14A321F72D9800B76892 /* macPingerGlobalVars.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = macPingerGlobalVars.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -135,6 +137,7 @@
 				E822F14121F70F48009418EF /* PreferencesViewController.swift */,
 				E8EB14A321F72D9800B76892 /* macPingerGlobalVars.swift */,
 				E869B21021FFB9480075290F /* HelpViewController.swift */,
+				E8E293D722062E64002AF0D0 /* LogsViewController.swift */,
 			);
 			path = macPinger;
 			sourceTree = "<group>";
@@ -347,6 +350,7 @@
 				E8D49BB821F5BCEE00DC594F /* AppDelegate.swift in Sources */,
 				E822F14221F70F48009418EF /* PreferencesViewController.swift in Sources */,
 				E869B21221FFB9480075290F /* HelpViewController.swift in Sources */,
+				E8E293D822062E64002AF0D0 /* LogsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

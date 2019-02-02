@@ -21,3 +21,8 @@ var buttonName3: String = "Google"
 var hostname1 = "www.apple.com"
 var hostname2 = "www.github.com"
 var hostname3 = "www.google.com"
+var logs = ""
+var logsGoogle = ""
+var logsGithub = ""
+var logsApple = ""
+

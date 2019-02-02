@@ -14,6 +14,8 @@
                         <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
                         <rect key="contentRect" x="196" y="240" width="480" height="270"/>
                         <rect key="screenRect" x="0.0" y="0.0" width="1440" height="877"/>
+                        <value key="minSize" type="size" width="480" height="270"/>
+                        <value key="maxSize" type="size" width="480" height="270"/>
                         <connections>
                             <outlet property="delegate" destination="1Ti-jf-MxY" id="mtM-Lj-hkj"/>
                         </connections>
@@ -24,7 +26,7 @@
                 </windowController>
                 <customObject id="OzI-Je-B5r" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="102" y="-299"/>
+            <point key="canvasLocation" x="75" y="-299"/>
         </scene>
         <!--Preferences View Controller-->
         <scene sceneID="9zf-NB-Ynt">
@@ -195,7 +197,7 @@
                 </viewController>
                 <customObject id="wfn-pl-V1S" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="675" y="-323"/>
+            <point key="canvasLocation" x="705" y="-299"/>
         </scene>
         <!--Window Controller-->
         <scene sceneID="i3D-HW-QO9">
@@ -206,6 +208,8 @@
                         <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
                         <rect key="contentRect" x="294" y="313" width="480" height="270"/>
                         <rect key="screenRect" x="0.0" y="0.0" width="1920" height="1057"/>
+                        <value key="minSize" type="size" width="480" height="270"/>
+                        <value key="maxSize" type="size" width="480" height="270"/>
                         <connections>
                             <outlet property="delegate" destination="bte-a9-vdy" id="mHz-3J-Mqr"/>
                         </connections>
@@ -216,7 +220,70 @@
                 </windowController>
                 <customObject id="poI-E7-DmU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="842" y="250"/>
+            <point key="canvasLocation" x="705" y="250"/>
+        </scene>
+        <!--Window Controller-->
+        <scene sceneID="ABV-GV-tMo">
+            <objects>
+                <windowController id="lVl-9h-7e8" sceneMemberID="viewController">
+                    <window key="window" title="Logs" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" frameAutosaveName="" animationBehavior="default" id="iTD-8L-9fK">
+                        <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
+                        <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+                        <rect key="contentRect" x="294" y="313" width="480" height="270"/>
+                        <rect key="screenRect" x="0.0" y="0.0" width="1920" height="1057"/>
+                        <connections>
+                            <outlet property="delegate" destination="lVl-9h-7e8" id="sd8-6k-CPU"/>
+                        </connections>
+                    </window>
+                    <connections>
+                        <segue destination="pF4-sU-qWG" kind="relationship" relationship="window.shadowedContentViewController" id="e5H-N3-dhz"/>
+                    </connections>
+                </windowController>
+                <customObject id="Kj2-v0-v58" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="692" y="676"/>
+        </scene>
+        <!--Logs View Controller-->
+        <scene sceneID="RDE-tv-Vhl">
+            <objects>
+                <viewController id="pF4-sU-qWG" customClass="LogsViewController" customModule="macPinger" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" id="4Un-w2-4Md">
+                        <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <scrollView borderType="none" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" id="EJt-wo-JmH">
+                                <rect key="frame" x="20" y="20" width="440" height="230"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <clipView key="contentView" drawsBackground="NO" copiesOnScroll="NO" id="Xdd-nQ-5Be">
+                                    <rect key="frame" x="0.0" y="0.0" width="425" height="230"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <textView editable="NO" importsGraphics="NO" richText="NO" verticallyResizable="YES" smartInsertDelete="YES" id="N5M-fK-Gf1">
+                                            <rect key="frame" x="0.0" y="0.0" width="425" height="230"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                            <size key="minSize" width="425" height="230"/>
+                                            <size key="maxSize" width="438" height="10000000"/>
+                                            <color key="insertionPointColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                        </textView>
+                                    </subviews>
+                                </clipView>
+                                <scroller key="verticalScroller" verticalHuggingPriority="750" horizontal="NO" id="Lj3-4m-D6N">
+                                    <rect key="frame" x="425" y="0.0" width="15" height="230"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </scroller>
+                            </scrollView>
+                        </subviews>
+                    </view>
+                    <connections>
+                        <outlet property="logsView" destination="EJt-wo-JmH" id="CE7-oC-mEL"/>
+                        <outlet property="logsViewString" destination="N5M-fK-Gf1" id="EGg-Ue-nCX"/>
+                    </connections>
+                </viewController>
+                <customObject id="hOi-Lg-2Tb" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1373" y="669"/>
         </scene>
         <!--Help View Controller-->
         <scene sceneID="GmY-w9-KnW">
@@ -337,7 +404,7 @@
                 </viewController>
                 <customObject id="4aj-E1-OKE" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1549" y="225"/>
+            <point key="canvasLocation" x="1302" y="250"/>
         </scene>
         <!--Application-->
         <scene sceneID="JPo-4y-FX3">
@@ -942,6 +1009,12 @@
                                 <modifierMask key="keyEquivalentModifierMask"/>
                                 <menu key="submenu" title="View" id="HyV-fh-RgO">
                                     <items>
+                                        <menuItem title="Logs" id="czx-gZ-HR5">
+                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                            <connections>
+                                                <segue destination="lVl-9h-7e8" kind="show" id="NnM-dg-Rq1"/>
+                                            </connections>
+                                        </menuItem>
                                         <menuItem title="Show Toolbar" keyEquivalent="t" id="snW-S8-Cw5">
                                             <modifierMask key="keyEquivalentModifierMask" option="YES" command="YES"/>
                                             <connections>
@@ -1027,8 +1100,10 @@
                     <window key="window" title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" animationBehavior="default" id="IQv-IB-iLA">
                         <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
                         <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
-                        <rect key="contentRect" x="196" y="240" width="480" height="270"/>
+                        <rect key="contentRect" x="196" y="240" width="446" height="534"/>
                         <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1027"/>
+                        <value key="minSize" type="size" width="446" height="534"/>
+                        <value key="maxSize" type="size" width="446" height="534"/>
                         <connections>
                             <outlet property="delegate" destination="B8D-0N-5wS" id="98r-iN-zZc"/>
                         </connections>
@@ -1039,7 +1114,7 @@
                 </windowController>
                 <customObject id="Oky-zY-oP4" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="75" y="250"/>
+            <point key="canvasLocation" x="75" y="363"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="hIz-AP-VOD">
@@ -1049,28 +1124,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="446" height="534"/>
                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <button verticalHuggingPriority="750" id="vhW-Rw-5UV">
-                                <rect key="frame" x="36" y="295" width="84" height="32"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                                <buttonCell key="cell" type="push" title="Google" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="adP-HP-5FK">
-                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                                    <font key="font" metaFont="system"/>
-                                    <connections>
-                                        <action selector="googlePress:" target="XfG-lQ-9wD" id="11Z-XA-4vW"/>
-                                    </connections>
-                                </buttonCell>
-                            </button>
-                            <button horizontalHuggingPriority="251" verticalHuggingPriority="750" id="Bbp-k9-30f">
-                                <rect key="frame" x="182" y="295" width="83" height="32"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                                <buttonCell key="cell" type="push" title="GitHub" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="ijE-Fc-HX3">
-                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                                    <font key="font" metaFont="system"/>
-                                </buttonCell>
-                                <connections>
-                                    <action selector="githubPree:" target="XfG-lQ-9wD" id="g3Y-wC-lOi"/>
-                                </connections>
-                            </button>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" setsMaxLayoutWidthAtFirstLayout="YES" id="3wo-as-mSe">
                                 <rect key="frame" x="126" y="448" width="195" height="17"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
@@ -1115,17 +1168,6 @@
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 </view>
                             </box>
-                            <button verticalHuggingPriority="750" id="jnT-Ya-XeG">
-                                <rect key="frame" x="335" y="295" width="74" height="32"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                                <buttonCell key="cell" type="push" title="Apple" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Soa-pW-pNR">
-                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                                    <font key="font" metaFont="system"/>
-                                    <connections>
-                                        <action selector="buttonApple:" target="XfG-lQ-9wD" id="QRb-k2-1PM"/>
-                                    </connections>
-                                </buttonCell>
-                            </button>
                             <box boxType="custom" cornerRadius="4" title="Box" id="Kl0-Oy-bCV">
                                 <rect key="frame" x="316" y="97" width="106" height="43"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
@@ -1146,6 +1188,24 @@
                                 <rect key="frame" x="122" y="382" width="203" height="132"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <textFieldCell key="cell" title="Label" id="JP5-QV-SHA">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="B2e-60-YpV">
+                                <rect key="frame" x="339" y="304" width="67" height="17"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <textFieldCell key="cell" lineBreakMode="clipping" alignment="center" title="Label" id="Ukh-qJ-oMT">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="0Kc-Sl-Egj">
+                                <rect key="frame" x="190" y="304" width="66" height="17"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <textFieldCell key="cell" lineBreakMode="clipping" alignment="center" title="Label" id="s9t-Vm-pdQ">
                                     <font key="font" metaFont="system"/>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
@@ -1178,20 +1238,82 @@
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="65x-yM-gaM">
+                                <rect key="frame" x="351" y="469" width="70" height="17"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" alignment="center" title="Label" placeholderString="reset" id="qpp-Ti-ufh">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
                             <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" id="XsH-jd-qZW">
-                                <rect key="frame" x="94" y="344" width="328" height="170"/>
+                                <rect key="frame" x="20" y="363" width="328" height="170"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="logomPUI" id="nel-hx-GSk"/>
                             </imageView>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="6x1-cU-pz1">
+                                <rect key="frame" x="45" y="304" width="65" height="17"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <textFieldCell key="cell" lineBreakMode="clipping" alignment="center" title="Google" id="9L5-OI-Ux5">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <button id="e7b-BC-B6t">
+                                <rect key="frame" x="337" y="454" width="99" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="restButton" imagePosition="only" alignment="center" alternateImage="resetPressed" imageScaling="proportionallyUpOrDown" inset="2" id="ckH-Ua-N54">
+                                    <behavior key="behavior" lightByContents="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="testButtonPressed:" target="XfG-lQ-9wD" id="a6W-og-N68"/>
+                                </connections>
+                            </button>
+                            <button id="2kj-Vt-1XT">
+                                <rect key="frame" x="27" y="289" width="101" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Untitled-1" imagePosition="only" alignment="center" alternateImage="alternativeTest" imageScaling="proportionallyUpOrDown" inset="2" id="Y1b-EA-QMG">
+                                    <behavior key="behavior" lightByContents="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="googlePress:" target="XfG-lQ-9wD" id="5V8-NO-6fG"/>
+                                </connections>
+                            </button>
+                            <button id="nyA-O4-0UB">
+                                <rect key="frame" x="171" y="289" width="103" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Untitled-1" imagePosition="only" alignment="center" alternateImage="alternativeTest" imageScaling="proportionallyUpOrDown" inset="2" id="9Sp-rF-Snt">
+                                    <behavior key="behavior" lightByContents="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="githubPress:" target="XfG-lQ-9wD" id="a0L-Md-vCt"/>
+                                </connections>
+                            </button>
+                            <button id="Lbh-yb-lWS">
+                                <rect key="frame" x="318" y="289" width="106" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Untitled-1" imagePosition="overlaps" alignment="center" alternateImage="alternativeTest" imageScaling="proportionallyUpOrDown" inset="2" id="6gv-gE-MD0">
+                                    <behavior key="behavior" lightByContents="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="applePress:" target="XfG-lQ-9wD" id="ykM-S9-kMj"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <shadow key="shadow">
                             <color key="color" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         </shadow>
                     </view>
                     <connections>
-                        <outlet property="buttonAppleOutlet" destination="jnT-Ya-XeG" id="peE-5J-TQc"/>
-                        <outlet property="buttonGHOutlet" destination="Bbp-k9-30f" id="8Uf-8S-Byl"/>
-                        <outlet property="buttonGoogleOutlet" destination="vhW-Rw-5UV" id="iwB-Dz-vdy"/>
+                        <outlet property="buttonAppleOutlet" destination="B2e-60-YpV" id="xki-Qa-DDV"/>
+                        <outlet property="buttonGHOutlet" destination="0Kc-Sl-Egj" id="lmW-4Z-uQr"/>
+                        <outlet property="googleTitle" destination="6x1-cU-pz1" id="R9f-Z5-XeC"/>
                         <outlet property="indicatorApple" destination="Kl0-Oy-bCV" id="fGi-Dc-F18"/>
                         <outlet property="indicatorGH" destination="Knp-Z8-r7S" id="4YV-vd-KSL"/>
                         <outlet property="indicatorGoogle" destination="eWy-tq-JIz" id="GJ2-Dg-hXP"/>
@@ -1204,16 +1326,21 @@
                         <outlet property="pingResultLabel" destination="LLy-Qk-8ac" id="vex-QC-IjR"/>
                         <outlet property="pingResultLabelApple" destination="QA0-CC-nbv" id="tWx-Gp-wMQ"/>
                         <outlet property="pingResultLabelGH" destination="R4n-Qe-xvt" id="f9I-jS-mpY"/>
+                        <outlet property="tesbuttonTitle" destination="65x-yM-gaM" id="0TQ-ts-Zty"/>
                     </connections>
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="75" y="786"/>
+            <point key="canvasLocation" x="75" y="989"/>
         </scene>
     </scenes>
     <resources>
         <image name="GitHub-Mark-Light-120px-plus" width="120" height="120"/>
         <image name="GitHub_Logo_White" width="1000" height="410"/>
+        <image name="Untitled-1" width="126" height="54"/>
+        <image name="alternativeTest" width="126" height="54"/>
         <image name="logomPUI" width="1024" height="371"/>
+        <image name="resetPressed" width="126" height="54"/>
+        <image name="restButton" width="126" height="54"/>
     </resources>
 </document>
