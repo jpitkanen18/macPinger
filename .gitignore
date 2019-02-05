@@ -8,3 +8,5 @@ DerivedData/
 Package.swift
 build/
 Build/
+Podfile
+Podfile.lock
