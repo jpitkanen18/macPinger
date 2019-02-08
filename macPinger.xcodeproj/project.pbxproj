@@ -10,6 +10,7 @@
 		46D846D3A72D31E570CBEC56 /* Pods_macPinger.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D3639D29E5302F58917DA93 /* Pods_macPinger.framework */; };
 		E822F14221F70F48009418EF /* PreferencesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E822F14121F70F48009418EF /* PreferencesViewController.swift */; };
 		E869B21221FFB9480075290F /* HelpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E869B21021FFB9480075290F /* HelpViewController.swift */; };
+		E869C777220DB9AE006F5BD0 /* keys.plist in Resources */ = {isa = PBXBuildFile; fileRef = E869C776220DB9AE006F5BD0 /* keys.plist */; };
 		E8D49BB821F5BCEE00DC594F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8D49BB721F5BCEE00DC594F /* AppDelegate.swift */; };
 		E8D49BBA21F5BCEE00DC594F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8D49BB921F5BCEE00DC594F /* ViewController.swift */; };
 		E8D49BBC21F5BCF100DC594F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8D49BBB21F5BCF100DC594F /* Assets.xcassets */; };
@@ -44,6 +45,7 @@
 		E822F14121F70F48009418EF /* PreferencesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferencesViewController.swift; sourceTree = "<group>"; };
 		E856CDF321F5DD4A00FEE309 /* macPinger.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macPinger.entitlements; sourceTree = "<group>"; };
 		E869B21021FFB9480075290F /* HelpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpViewController.swift; sourceTree = "<group>"; };
+		E869C776220DB9AE006F5BD0 /* keys.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = keys.plist; sourceTree = "<group>"; };
 		E8D49BB421F5BCEE00DC594F /* macPinger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = macPinger.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8D49BB721F5BCEE00DC594F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = macPinger/AppDelegate.swift; sourceTree = SOURCE_ROOT; };
 		E8D49BB921F5BCEE00DC594F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -138,6 +140,7 @@
 				E8EB14A321F72D9800B76892 /* macPingerGlobalVars.swift */,
 				E869B21021FFB9480075290F /* HelpViewController.swift */,
 				E8E293D722062E64002AF0D0 /* LogsViewController.swift */,
+				E869C776220DB9AE006F5BD0 /* keys.plist */,
 			);
 			path = macPinger;
 			sourceTree = "<group>";
@@ -274,6 +277,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E869C777220DB9AE006F5BD0 /* keys.plist in Resources */,
 				E8D49BBC21F5BCF100DC594F /* Assets.xcassets in Resources */,
 				E8D49BBF21F5BCF100DC594F /* Main.storyboard in Resources */,
 			);

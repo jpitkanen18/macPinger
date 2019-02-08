@@ -28,6 +28,7 @@ class LogsViewController: NSViewController {
     }
     override func viewDidAppear() {
         super.viewDidAppear()
+        self.view.window?.title  = "Logs"
         logsViewString.string = logsViewString.string + "\n" + logsGoogle + "\n" + logsGithub + "\n" + logsApple
         notificationCenter.addObserver(self, selector: #selector(errorLogGoogleOG(_:)), name: .errorLogNotificationGoogle, object: nil)
         notificationCenter.addObserver(self, selector: #selector(errorLogGithub(_:)), name: .errorLogNotificationGithub, object: nil)

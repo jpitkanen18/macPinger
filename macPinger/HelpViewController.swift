@@ -72,8 +72,8 @@ class HelpViewController: NSViewController {
 }
 class SendEmail: NSObject {
     static func send() {
-        let benis = Mailgun.client(withDomain: "sandbox67f5f044ed5d40db869cc074e8a584d3.mailgun.org", apiKey: "55187384cbb0c866a05a9dd6a1af08c5-c8c889c9-dac6fe6c")
-        benis?.sendMessage(to: "Helper <macpingerhelp@gmail.com>", from: "\(emailNameVar) <\(emailAddressVar)>" , subject: emailSubjctVar, body: emailContentVar)
+        let mailgun = Mailgun.client(withDomain: "sandbox67f5f044ed5d40db869cc074e8a584d3.mailgun.org", apiKey: "")
+        mailgun?.sendMessage(to: "Helper <macpingerhelp@gmail.com>", from: "\(emailNameVar) <\(emailAddressVar)>" , subject: emailSubjctVar, body: emailContentVar)
     }
 }
 
