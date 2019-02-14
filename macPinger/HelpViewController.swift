@@ -22,6 +22,7 @@ class HelpViewController: NSViewController {
     @IBOutlet weak var emailName: NSTextField!
     @IBOutlet weak var emailSubjct: NSTextField!
     @IBOutlet weak var sentLabel: NSTextField!
+    @IBOutlet weak var helpBlur: NSVisualEffectView!
     let bensi = NSColor(deviceRed: 0, green: 240, blue: 0, alpha: 0.8)
     
     override func viewDidLoad() {
@@ -38,7 +39,15 @@ class HelpViewController: NSViewController {
     }
     override func viewDidAppear() {
         super .viewDidAppear()
-        self.view.window?.title = "Help"
+        self.view.window?.titleVisibility = NSWindow.TitleVisibility.hidden
+        self.view.window?.titlebarAppearsTransparent = true
+        self.view.window?.styleMask.insert(.fullSizeContentView)
+        self.view.window?.backgroundColor = .clear
+        self.view.window?.isOpaque = false
+        helpBlur.blendingMode = .behindWindow
+        helpBlur.state = .active
+        helpBlur.material = .dark
+        helpBlur.wantsLayer = true
         
     }
     @IBAction func githubButton(_ sender: Any) {
@@ -71,6 +80,17 @@ class HelpViewController: NSViewController {
     
 }
 class SendEmail: NSObject {
+    var keys: NSDictionary?
+    
+    /*if let path = Bundle.mainBundle().pathForResource("Keys", ofType: "plist") {
+        keys = NSDictionary(contentsOfFile: path)
+    }
+    if let dict = keys {
+        let applicationId = dict["parseApplicationId"] as? String
+        let clientKey = dict["parseClientKey"] as? String
+        
+        // Initialize Parse.
+        Parse.setApplicationId(applicationId!, clientKey: clientKey!)*/
     static func send() {
         let mailgun = Mailgun.client(withDomain: "sandbox67f5f044ed5d40db869cc074e8a584d3.mailgun.org", apiKey: "")
         mailgun?.sendMessage(to: "Helper <macpingerhelp@gmail.com>", from: "\(emailNameVar) <\(emailAddressVar)>" , subject: emailSubjctVar, body: emailContentVar)

@@ -12,6 +12,8 @@ class LogsViewController: NSViewController {
     
     @IBOutlet var logsViewString: NSTextView!
     @IBOutlet weak var logsView: NSScrollView!
+    @IBOutlet weak var logLabel: NSTextField!
+    @IBOutlet weak var logBlur: NSVisualEffectView!
     let notificationCenter = NotificationCenter.default
     @objc func errorLogGoogleOG(_ notification:Notification) {
         logsViewString.string = logsViewString.string + "\n" + logsGoogle
@@ -28,13 +30,25 @@ class LogsViewController: NSViewController {
     }
     override func viewDidAppear() {
         super.viewDidAppear()
-        self.view.window?.title  = "Logs"
+        self.view.window?.titleVisibility = NSWindow.TitleVisibility.hidden
+        self.view.window?.titlebarAppearsTransparent = true
+        self.view.window?.styleMask.insert(.fullSizeContentView)
+        self.view.window?.backgroundColor = .clear
+        self.view.window?.isOpaque = false
+        logBlur.blendingMode = .behindWindow
+        logBlur.state = .active
+        logBlur.material = .dark
+        logBlur.wantsLayer = true
         logsViewString.string = logsViewString.string + "\n" + logsGoogle + "\n" + logsGithub + "\n" + logsApple
         notificationCenter.addObserver(self, selector: #selector(errorLogGoogleOG(_:)), name: .errorLogNotificationGoogle, object: nil)
         notificationCenter.addObserver(self, selector: #selector(errorLogGithub(_:)), name: .errorLogNotificationGithub, object: nil)
         notificationCenter.addObserver(self, selector: #selector(errorLogApple(_:)), name: .errorLogNotificationApple, object: nil)
+        muikeaTicker = true
+        self.logLabel.stringValue = "This is the log window for\nerror troubleshooting"
     }
-    
+    override func viewDidDisappear() {
+        muikeaTicker = false
+    }
 }
 extension Notification.Name{
     static let errorLogNotificationApple = Notification.Name("benis")
