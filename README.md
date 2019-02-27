@@ -8,6 +8,17 @@ Simple macOS application for checking website/IP Address availability
 
 Early Alpha, made as a side project by a beginning programmer
 
+- [x] App working as expected
+- [x] UI layouting
+- [x] Finishing name change to macPinger // From Service Checker
+- [x] Adding logs
+- [x] Adding a custom UI with custom assets
+- [x] Notifying users about an outage // Done with UNUserNotification
+- [ ] Providing a detailed explanation of the development for learning programmers
+- [ ] Optimising funcs // Partially done
+- [ ] Incorporating Objective-C
+- [ ] Creating the entire project in Obj-C for learning purposes
+
 
 ### Pods used
 
