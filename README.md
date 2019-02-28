@@ -14,10 +14,10 @@ Early Alpha, made as a side project by a beginning programmer
 - [x] Adding logs
 - [x] Adding a custom UI with custom assets
 - [x] Notifying users about an outage // Done with UNUserNotification
-- [ ] Providing a detailed explanation of the development for learning programmers
+- [ ] Providing a detailed explanation of the development for learning programmers
 - [ ] Optimising funcs // Partially done
-- [ ] Incorporating Objective-C
-- [ ] Creating the entire project in Obj-C for learning purposes
+- [ ] Incorporating Objective-C
+- [ ] Creating the entire project in Obj-C for learning purposes
 
 
 ### Pods used
