@@ -20,12 +20,8 @@ Early Alpha, made as a side project by a beginning programmer
 - [ ] Creating the entire project in Obj-C for learning purposes
 
 
-### Pods used
+### (Cocoa)Pods used
 
 PlainPing
 
 source: https://github.com/naptics/PlainPing
-
-Alamofire
-
-source: https://github.com/Alamofire/Alamofire
