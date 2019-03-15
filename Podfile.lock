@@ -1,28 +1,16 @@
 PODS:
-  - AFNetworking (1.1.0)
-  - Alamofire (4.8.1)
-  - mailgun (1.0.3):
-    - AFNetworking (~> 1.1.0)
   - PlainPing (0.5)
 
 DEPENDENCIES:
-  - Alamofire
-  - mailgun
   - PlainPing
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
-    - AFNetworking
-    - Alamofire
-    - mailgun
     - PlainPing
 
 SPEC CHECKSUMS:
-  AFNetworking: e6427e782b25a2289d909960df8ef41358b3277c
-  Alamofire: 16ce2c353fb72865124ddae8a57c5942388f4f11
-  mailgun: 17290deea4db24050dd03ca59cd7385d508904b3
   PlainPing: 6b248b94d92be7ec0410952d1b09af43b9a39015
 
-PODFILE CHECKSUM: 041e95ce9979786cb5a634364b062b6a213c3d0f
+PODFILE CHECKSUM: 1c5eb7032694ea9673fbbe23e256455fd8ffd119
 
 COCOAPODS: 1.5.2

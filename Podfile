@@ -7,7 +7,5 @@ target 'macPinger' do
   inhibit_all_warnings!
 
   pod "PlainPing"
-  pod "Alamofire"
-  pod 'mailgun'
 
 end

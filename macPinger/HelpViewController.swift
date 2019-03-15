@@ -11,7 +11,6 @@ var emailContentVar = "placeholder"
 var emailAddressVar = "placeholder"
 var emailNameVar = "placeholder"
 var emailSubjctVar = "placeholder"
-import mailgun
 class HelpViewController: NSViewController {
     @IBOutlet weak var githubLabe: NSTextField!
     @IBOutlet weak var githubButtonTitle: NSButton!
@@ -66,7 +65,6 @@ class HelpViewController: NSViewController {
         emailNameVar = emailname
         let emailsubjct = emailSubjct.stringValue
         emailSubjctVar = emailsubjct
-        SendEmail.send()
         emailContents.stringValue = ""
         emailAddress.stringValue = ""
         emailName.stringValue = ""
@@ -91,9 +89,5 @@ class SendEmail: NSObject {
         
         // Initialize Parse.
         Parse.setApplicationId(applicationId!, clientKey: clientKey!)*/
-    static func send() {
-        let mailgun = Mailgun.client(withDomain: "sandbox67f5f044ed5d40db869cc074e8a584d3.mailgun.org", apiKey: "")
-        mailgun?.sendMessage(to: "Helper <macpingerhelp@gmail.com>", from: "\(emailNameVar) <\(emailAddressVar)>" , subject: emailSubjctVar, body: emailContentVar)
-    }
 }
 

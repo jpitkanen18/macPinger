@@ -15,17 +15,15 @@ class LogsViewController: NSViewController {
     @IBOutlet weak var logLabel: NSTextField!
     @IBOutlet weak var logBlur: NSVisualEffectView!
     let notificationCenter = NotificationCenter.default
-    @objc func errorLogGoogleOG(_ notification:Notification) {
-        logsViewString.string = logsViewString.string + "\n" + logsGoogle
-    }
-    @objc func errorLogApple(_ notification:Notification) {
-        logsViewString.string = logsViewString.string + "\n" + logsApple
-    }
-    @objc func errorLogGithub(_ notification:Notification) {
-        logsViewString.string = logsViewString.string + "\n" + logsGithub
+    @objc func errorLog(_ notification:Notification) {
+        logsAll = logsAll + "\n" + logsVar
+        logsViewString.string = logsViewString.string + "\n" + logsVar
     }
     override func viewDidLoad() {
         super.viewDidLoad()
+        notificationCenter.addObserver(self, selector: #selector(errorLog(_:)), name: .errorLogNotificationGoogle, object: nil)
+        notificationCenter.addObserver(self, selector: #selector(errorLog(_:)), name: .errorLogNotificationGithub, object: nil)
+        notificationCenter.addObserver(self, selector: #selector(errorLog(_:)), name: .errorLogNotificationApple, object: nil)
         
     }
     override func viewDidAppear() {
@@ -39,10 +37,7 @@ class LogsViewController: NSViewController {
         logBlur.state = .active
         logBlur.material = .dark
         logBlur.wantsLayer = true
-        logsViewString.string = logsViewString.string + "\n" + logsGoogle + "\n" + logsGithub + "\n" + logsApple
-        notificationCenter.addObserver(self, selector: #selector(errorLogGoogleOG(_:)), name: .errorLogNotificationGoogle, object: nil)
-        notificationCenter.addObserver(self, selector: #selector(errorLogGithub(_:)), name: .errorLogNotificationGithub, object: nil)
-        notificationCenter.addObserver(self, selector: #selector(errorLogApple(_:)), name: .errorLogNotificationApple, object: nil)
+        logsViewString.string = logsAll
         muikeaTicker = true
         self.logLabel.stringValue = "This is the log window for\nerror troubleshooting"
     }

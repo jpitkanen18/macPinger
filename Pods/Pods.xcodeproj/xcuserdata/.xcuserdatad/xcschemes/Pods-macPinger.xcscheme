@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "1D51A7415A9054150CC71B856C171201"
+               BlueprintIdentifier = "5035631A076FE53F6418C87A5FDBB1B6"
                BlueprintName = "Pods-macPinger"
                ReferencedContainer = "container:Pods.xcodeproj"
                BuildableName = "Pods-macPinger.framework">

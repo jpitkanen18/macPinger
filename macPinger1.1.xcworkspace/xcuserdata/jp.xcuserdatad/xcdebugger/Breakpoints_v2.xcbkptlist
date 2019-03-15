@@ -88,11 +88,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "macPinger/ViewController.swift"
-            timestampString = "571870735.487922"
+            timestampString = "574289092.350461"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "414"
-            endingLineNumber = "414"
+            startingLineNumber = "417"
+            endingLineNumber = "417"
             landmarkName = "showNotification(message:title:identifier:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -104,11 +104,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "macPinger/ViewController.swift"
-            timestampString = "571870735.488096"
+            timestampString = "574289092.351101"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "413"
-            endingLineNumber = "413"
+            startingLineNumber = "416"
+            endingLineNumber = "416"
             landmarkName = "showNotification(message:title:identifier:)"
             landmarkType = "7">
             <Locations>
@@ -152,11 +152,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "macPinger/ViewController.swift"
-            timestampString = "571870735.488153"
+            timestampString = "574289092.35164"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "423"
-            endingLineNumber = "423"
+            startingLineNumber = "426"
+            endingLineNumber = "426"
             landmarkName = "userNotificationCenter(_:didReceive:withCompletionHandler:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -168,13 +168,123 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "macPinger/ViewController.swift"
-            timestampString = "571870735.488199"
+            timestampString = "574289092.352181"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "421"
-            endingLineNumber = "421"
+            startingLineNumber = "424"
+            endingLineNumber = "424"
             landmarkName = "userNotificationCenter(_:didReceive:withCompletionHandler:)"
             landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "macPinger/ViewController.swift"
+            timestampString = "574289092.352731"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "516"
+            endingLineNumber = "516"
+            landmarkName = "pingAddress(hostname:resultLabel:indicatorLabel:indicatorOnline:indicatorOffline:indicatorUnknown:lastPing:errorLogNotification:repeatTicker:identifier:repeatTimer:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "macPinger/LogsViewController.swift"
+            timestampString = "574289092.353232"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "19"
+            endingLineNumber = "19"
+            landmarkName = "errorLog(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "macPinger/ViewController.swift"
+            timestampString = "574289150.4261661"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "53"
+            endingLineNumber = "53"
+            landmarkName = "ViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "macPinger.ViewController.repeatTimer3.getter : __C.NSTimer"
+                  moduleName = "macPinger"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jp/xcode/macPinger/macPinger/ViewController.swift"
+                  timestampString = "574289151.0093009"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "53"
+                  endingLineNumber = "53"
+                  offsetFromSymbolStart = "114">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "macPinger.ViewController.repeatTimer3.setter : __C.NSTimer"
+                  moduleName = "macPinger"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jp/xcode/macPinger/macPinger/ViewController.swift"
+                  timestampString = "574289151.0116889"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "53"
+                  endingLineNumber = "53"
+                  offsetFromSymbolStart = "128">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "macPinger.ViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; macPinger.ViewController"
+                  moduleName = "macPinger"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jp/xcode/macPinger/macPinger/ViewController.swift"
+                  timestampString = "574289151.014147"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "53"
+                  endingLineNumber = "53"
+                  offsetFromSymbolStart = "3813">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "macPinger.ViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;macPinger.ViewController&gt;"
+                  moduleName = "macPinger"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jp/xcode/macPinger/macPinger/ViewController.swift"
+                  timestampString = "574289151.016487"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "53"
+                  endingLineNumber = "53"
+                  offsetFromSymbolStart = "3778">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

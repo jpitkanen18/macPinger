@@ -50,7 +50,7 @@ class ViewController: NSViewController, NSUserNotificationCenterDelegate, UNUser
     let formatterDate = DateFormatter()
     var repeatTimer1: Timer!
     var repeatTimer2: Timer!
-    var repeatTimer3: Timer!
+    var repeatTimer3 = Timer.scheduledTimer(timeInterval: repeatIntervalGlbl3, target: self, selector: #selector(googlePressNonIB), userInfo: nil, repeats: true)
     var errorTicker1 = 0
     var errorTicker2 = 0
     var errorTicker3 = 0
@@ -94,7 +94,8 @@ class ViewController: NSViewController, NSUserNotificationCenterDelegate, UNUser
         self.labelGooglePing.toolTip = hostnameUser3
         self.stopButtonOutlet.isHidden = false
         self.stopLabel.isHidden = false
-        self.repeatTimer3 = Timer.scheduledTimer(timeInterval: repeatIntervalGlbl3, target: self, selector: #selector(googlePressNonIB), userInfo: nil, repeats: true)
+        //self.repeatTimer3 = Timer.scheduledTimer(timeInterval: repeatIntervalGlbl3, target: self, selector: #selector(googlePressNonIB), userInfo: nil, repeats: true)
+        repeatTimer3.fire()
     }
     @objc func resetSettings(_ notification:Notification){
         self.buttonAppleOutlet.stringValue = buttonName1
@@ -176,7 +177,7 @@ class ViewController: NSViewController, NSUserNotificationCenterDelegate, UNUser
                 }
                 if let error = error {
                     let logErrorCustomApple = error.localizedDescription
-                    logsApple = logErrorCustomApple
+                    //logsApple = logErrorCustomApple
                     self.pingResultLabelApple.stringValue = ("NA Check log")
                     NotificationCenter.default.post(name: .errorLogNotificationApple, object: nil)
                     self.pingResultLabelApple.isHidden = false
@@ -188,6 +189,7 @@ class ViewController: NSViewController, NSUserNotificationCenterDelegate, UNUser
                     self.lastPingApple.stringValue = self.formatterDate.string(from: self.currentDateTime)
                     if (repeatTicker1 == true) {
                         self.errorTicker1 = self.errorTicker1 + 1
+                        self.applePressNonIB()
                     }
                     if (self.errorTicker1 >= 3) {
                         self.showNotification(message: "Address Offline", title: "Address \(hostnameUser1) is offline", identifier: self.applePingIdentifier)
@@ -217,7 +219,7 @@ class ViewController: NSViewController, NSUserNotificationCenterDelegate, UNUser
                 }
                 if let error = error {
                     let logErrorNormApple = error.localizedDescription
-                    logsApple = logErrorNormApple
+                    //logsApple = logErrorNormApple
                     self.pingResultLabelApple.stringValue = ("NA Check log")
                     NotificationCenter.default.post(name: .errorLogNotificationApple, object: nil)
                     self.pingResultLabelApple.isHidden = false
@@ -251,7 +253,7 @@ class ViewController: NSViewController, NSUserNotificationCenterDelegate, UNUser
                 }
                 if let error = error {
                     let logErrorCustomGithub = error.localizedDescription
-                    logsGithub = logErrorCustomGithub
+                    //logsGithub = logErrorCustomGithub
                     self.pingResultLabelGH.stringValue = ("NA Check log")
                     NotificationCenter.default.post(name: .errorLogNotificationGithub, object: nil)
                     self.pingResultLabelGH.isHidden = false
@@ -290,7 +292,7 @@ class ViewController: NSViewController, NSUserNotificationCenterDelegate, UNUser
                 }
                 if let error = error {
                     let logErrorNormGithub = error.localizedDescription
-                    logsGithub = logErrorNormGithub
+                    //logsGithub = logErrorNormGithub
                     self.pingResultLabelGH.stringValue = "NA Check log"
                     NotificationCenter.default.post(name: .errorLogNotificationGithub, object: nil)
                     self.pingResultLabelGH.isHidden = false
@@ -306,7 +308,8 @@ class ViewController: NSViewController, NSUserNotificationCenterDelegate, UNUser
         }
     }
     @IBAction func googlePress(_ sender: Any) {
-       googlePressNonIB()
+       //googlePressNonIB()
+        pingAddress(hostname: hostnameUser3, resultLabel: pingResultLabel, indicatorLabel: indicatorGoogle, indicatorOnline: indicatorOnline, indicatorOffline: indicatorOffline, indicatorUnknown: indicatorUnknown, lastPing: lastPingGoogle, errorLogNotification: .errorLogNotificationGoogle, repeatTicker: repeatTicker3, identifier: googlePingIdentifier, repeatTimer: repeatTimer3)
     }
     @objc func googlePressNonIB() {
         if buttonPressedYes3 == true {
@@ -326,7 +329,7 @@ class ViewController: NSViewController, NSUserNotificationCenterDelegate, UNUser
                 }
                 if let error = error {
                     let logErrorCustomGoogle = error.localizedDescription
-                    logsGoogle = logErrorCustomGoogle
+                    //logsGoogle = logErrorCustomGoogle
                     self.pingResultLabel.stringValue = ("NA check logs")
                     NotificationCenter.default.post(name: .errorLogNotificationGoogle, object: nil)
                     self.pingResultLabel.isHidden = false
@@ -366,7 +369,7 @@ class ViewController: NSViewController, NSUserNotificationCenterDelegate, UNUser
                 }
                 if let error = error {
                     let logErrorNormGoogle = error.localizedDescription
-                    logsGoogle = logErrorNormGoogle
+                    //logsGoogle = logErrorNormGoogle
                     self.pingResultLabel.stringValue = ("NA check logs")
                     NotificationCenter.default.post(name: .errorLogNotificationGoogle, object: nil)
                     self.pingResultLabel.isHidden = false
@@ -490,6 +493,49 @@ class ViewController: NSViewController, NSUserNotificationCenterDelegate, UNUser
         notifCenterU.delegate = self
         
     }
+    func pingAddress(hostname: String, resultLabel: NSTextField, indicatorLabel: NSTextField, indicatorOnline: NSImageView, indicatorOffline: NSImageView, indicatorUnknown: NSImageView, lastPing: NSTextField, errorLogNotification: NSNotification.Name, repeatTicker: Bool, identifier: String, repeatTimer: Timer) {
+            var errorTicker = 0
+            PlainPing.ping(hostname, withTimeout: 1, completionBlock: {(timeElapsed:Double?, error:Error?) in
+            if let latency = timeElapsed {
+                let latenssi = String(format: "%.2f", latency)
+                resultLabel.stringValue = latenssi
+                resultLabel.isHidden = false
+                indicatorLabel.isHidden = false
+                indicatorLabel.stringValue = "Status: Online"
+                indicatorOnline.isHidden = false
+                indicatorOffline.isHidden = true
+                indicatorUnknown.isHidden = true
+                lastPing.stringValue = self.formatterDate.string(from: self.currentDateTime)
+                print(hostname)
+    
+                }
+                if let error = error {
+                    let logError = error.localizedDescription
+                    logsVar = logError
+                    resultLabel.stringValue = ("NA Check log")
+                    NotificationCenter.default.post(name: errorLogNotification, object: nil)
+                    resultLabel.isHidden = false
+                    indicatorLabel.isHidden = false
+                    indicatorLabel.stringValue = "Status: Offline"
+                    indicatorOffline.isHidden = false
+                    indicatorOnline.isHidden = true
+                    indicatorUnknown.isHidden = true
+                    lastPing.stringValue = self.formatterDate.string(from: self.currentDateTime)
+                    if repeatTicker == true {
+                        errorTicker = errorTicker + 1
+                    }
+                    if errorTicker > 3 {
+                        self.showNotification(message: "Address Offline", title: "Address \(hostname) is offline", identifier: identifier)
+                        repeatTimer.invalidate()
+                        if (!(self.repeatTimer1.isValid == true || self.repeatTimer2.isValid == true || self.repeatTimer3.isValid == true)){
+                            repeatTimer.invalidate()
+                            self.stopLabel.isHidden = true
+                            self.stopButtonOutlet.isHidden = true
+                        }
+                    }
+    }
+    }
+    )}
 }
 extension Notification.Name{
     static let buttonFirstHasBeenPressed = Notification.Name("Done1")
