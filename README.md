@@ -15,7 +15,7 @@ Early Alpha, made as a side project by a beginning programmer
 - [x] Adding a custom UI with custom assets
 - [x] Notifying users about an outage // Done with UNUserNotification
 - [ ] Providing a detailed writeup of the development for learning programmers // partially done
-- [ ] Optimising funcs // Partially done
+- [ ] Optimising methods // Partially done
 - [ ] Incorporating Objective-C
 - [ ] Creating the entire project in Obj-C for learning purposes
 
