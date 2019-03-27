@@ -11,3 +11,4 @@ Build/
 Podfile
 Podfile.lock
 macPinger/keys.plist
+Pods/
