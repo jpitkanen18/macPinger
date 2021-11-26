@@ -13,3 +13,5 @@ Podfile.lock
 macPinger/keys.plist
 Pods/
 Common/
+.DS_Store
+macPinger.xcworkspace/xcuserdata/jp.xcuserdatad/UserInterfaceState.xcuserstate

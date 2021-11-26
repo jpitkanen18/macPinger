@@ -10,7 +10,6 @@
 		46D846D3A72D31E570CBEC56 /* Pods_macPinger.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D3639D29E5302F58917DA93 /* Pods_macPinger.framework */; };
 		E822F14221F70F48009418EF /* PreferencesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E822F14121F70F48009418EF /* PreferencesViewController.swift */; };
 		E869B21221FFB9480075290F /* HelpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E869B21021FFB9480075290F /* HelpViewController.swift */; };
-		E88901E22214AAA300161615 /* keys.plist in Resources */ = {isa = PBXBuildFile; fileRef = E88901E12214AAA300161615 /* keys.plist */; };
 		E8D49BB821F5BCEE00DC594F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8D49BB721F5BCEE00DC594F /* AppDelegate.swift */; };
 		E8D49BBA21F5BCEE00DC594F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8D49BB921F5BCEE00DC594F /* ViewController.swift */; };
 		E8D49BBC21F5BCF100DC594F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8D49BBB21F5BCF100DC594F /* Assets.xcassets */; };
@@ -228,7 +227,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1010;
-				LastUpgradeCheck = 1010;
+				LastUpgradeCheck = 1110;
 				ORGANIZATIONNAME = jbenisoy;
 				TargetAttributes = {
 					E8D49BB321F5BCEE00DC594F = {
@@ -279,7 +278,6 @@
 			files = (
 				E8D49BBC21F5BCF100DC594F /* Assets.xcassets in Resources */,
 				E8D49BBF21F5BCF100DC594F /* Main.storyboard in Resources */,
-				E88901E22214AAA300161615 /* keys.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -522,6 +520,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 74RWVTYMM3;
+				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = macPinger/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -552,6 +551,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 74RWVTYMM3;
+				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = macPinger/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -664,7 +664,7 @@
 				E8D49BD921F5BCF100DC594F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		E8D49BDA21F5BCF100DC594F /* Build configuration list for PBXNativeTarget "macPinger" */ = {
 			isa = XCConfigurationList;
@@ -673,7 +673,7 @@
 				E8D49BDC21F5BCF100DC594F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		E8D49BDD21F5BCF100DC594F /* Build configuration list for PBXNativeTarget "macPingerTests" */ = {
 			isa = XCConfigurationList;
@@ -682,7 +682,7 @@
 				E8D49BDF21F5BCF100DC594F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		E8D49BE021F5BCF100DC594F /* Build configuration list for PBXNativeTarget "macPingerUITests" */ = {
 			isa = XCConfigurationList;
@@ -691,7 +691,7 @@
 				E8D49BE221F5BCF100DC594F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
 	};
